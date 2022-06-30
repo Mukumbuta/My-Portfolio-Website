@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 body {
   position: relative;
   width: 375px;
@@ -119,7 +122,7 @@ body {
   color: #ff6b00;
 }
 
-.primary-text h2 {
+.primary-text .secondary-text {
   width: 327px;
   height: 20px;
   font-family: "Roboto", sans-serif;

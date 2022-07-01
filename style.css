@@ -174,7 +174,7 @@ li {
   list-style: none;
 }
 
-/*my.myprojects section*/
+/* my.myprojects section */
 .myprojects {
   display: grid;
   grid-template-columns: 1fr;
@@ -1117,7 +1117,7 @@ li {
   background-attachment: local;
 }
 
-/* Activate About section button*/
+/* Activate About section button */
 .about .mycv-btn:hover {
   color: #ff6b00;
   background-color: #fff;

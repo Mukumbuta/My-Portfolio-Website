@@ -902,3 +902,54 @@ li {
   margin-right: 30px;
   padding-right: 10px;
 }
+
+/* Activate buttons */
+.btn:hover {
+  color: #ff6b00;
+  background-color: #fff;
+}
+
+.btn:active {
+  color: #fff;
+  background-color: #ff6b00;
+}
+
+.project1 .btn1:hover {
+  color: #ff6b00;
+  background-color: #fff;
+}
+
+.project1 .btn1:active {
+  color: #fff;
+  background-color: #ff6b00;
+}
+
+.project2 .btn2:hover {
+  color: #ff6b00;
+  background-color: #fff;
+}
+
+.project2 .btn2:active {
+  color: #fff;
+  background-color: #fff;
+}
+
+.project3 .btn3:hover {
+  color: #ff6b00;
+  background-color: #fff;
+}
+
+.project3 .btn3:active {
+  color: #fff;
+  background-color: #ff6b00;
+}
+
+.project4 .btn4:hover {
+  color: #ff6b00;
+  background-color: #fff;
+}
+
+.project4 .btn4:active {
+  color: #fff;
+  background-color: #ff6b00;
+}

@@ -904,7 +904,7 @@ li {
   padding-right: 10px;
 }
 
-/* Activate buttons */
+/* Activate Work section buttons */
 .btn:hover {
   color: #ff6b00;
   background-color: #fff;
@@ -1113,4 +1113,15 @@ li {
   background-position: left -1px center;
   background-size: 30px 30px;
   background-attachment: local;
+}
+
+/* Activate About section button*/
+.about .mycv-btn:hover {
+  color: #ff6b00;
+  background-color: #fff;
+}
+
+.about .mycv-btn:active {
+  color: #fff;
+  background-color: #ff6b00;
 }

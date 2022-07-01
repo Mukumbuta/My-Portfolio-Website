@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
@@ -174,7 +174,7 @@ li {
   list-style: none;
 }
 
-/* my.myprojects section */
+/* Work section */
 .myprojects {
   display: grid;
   grid-template-columns: 1fr;
@@ -219,7 +219,7 @@ li {
   top: 20px;
   margin-top: -60px;
   flex-grow: 0;
-  background: url(img/project1.svg);
+  background: url(icons/project_img.svg);
   background-repeat: no-repeat;
   background-position: top 5px left 5px;
   background-size: 300px 350px;
@@ -354,7 +354,7 @@ li {
   flex-grow: 0;
 }
 
-.description p {
+.description1 p {
   width: 295px;
   height: 87px;
   font-family: "Inter", sans-serif;
@@ -368,15 +368,16 @@ li {
   flex-grow: 0;
 }
 
-.description1 p {
-  width: 295px;
-  height: 87px;
+.description p {
+  width: 320px;
+  height: 147px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
+  margin-top: -10px;
   line-height: 24px;
-  color: #fff;
+  color: #091e42;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -394,21 +395,6 @@ li {
   flex: none;
   order: 1;
   flex-grow: 0;
-}
-
-.project .description p {
-  width: 327px;
-  height: 147px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #091e42;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin-top: -10px;
 }
 
 .project .skills {
@@ -988,7 +974,7 @@ li {
 }
 
 .about .intro {
-  width: 327px;
+  width: 305px;
   height: 148px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -999,7 +985,7 @@ li {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin-top: -380px;
+  margin-top: -280px;
 }
 
 .about .mycv-btn {
@@ -1021,7 +1007,7 @@ li {
   color: #fff;
   text-decoration: none;
   border: none;
-  margin-top: -600px;
+  margin-top: -400px;
 }
 
 .about .mytechs {
@@ -1126,4 +1112,13 @@ li {
 .about .mycv-btn:active {
   color: #fff;
   background-color: #ff6b00;
+}
+
+.seperator {
+  margin-top: -450px;
+  justify-self: center;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 300px 2px;
+  background-attachment: local;
 }

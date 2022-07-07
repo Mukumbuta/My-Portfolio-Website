@@ -5,194 +5,226 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Porfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- font links -->
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+  <!-- Header section -->
     <header class="navbar">
         <div class="mylogo">
-        <a class="mylogo-text" href="https://twitter.com/Mukumbuta8">Emmanuel Simasiku</a>
+           <a class="mylogo-text" href="https://twitter.com/Mukumbuta8">John Doe</a>
         </div>
         <nav class="toolbar">
-        <div class="menubar1"></div>
-        <div class="menubar2"></div>
-        <div class="menubar3"></div>
+          <div class="menubar1 bar"></div>
+          <div class="menubar2 bar"></div>
+          <div class="menubar3 bar"></div>
         </nav>
     </header>
+
+    <!-- primary text section -->
     <section class="primary-text">
-        <h1>
+
+      <div class="text-container">
+        <h1 class="title">
           Hey there. I'm Emmanuel
         </h1>
         <p class="secondary-text">
           I'm a Software Developer
         </p>
-        <p>
+        <p class="primary-text-description">
           I can help you build a product, 
           feature or website. Look through some of my work and experience! 
           If you like what you see and have a project you need coded, don't hesitate to contact me.
         </p>
+      </div>
+
         <ul class="media-icons">
-        <li>
-            <a href="github.com/Mukumbuta">
-            <img src="icons/github.svg" alt="My github account">
-            </a>
-        </li>
-        <li>
-            <a href="linkedin.com/mukumbuta">
-            <img src="icons/linkdin.svg" alt="My linkedin account">
-            </a>
-        </li>
-        <li>
-            <a href="#">
-            <img src="icons/win.svg" alt="Social handle">
-            </a>
-        </li>
-        <li>
-            <a href="twitter.com/Mukumbuta8">
-            <img src="icons/twitter.svg" alt="My twitter account">
-            </a>
-        </li>
-        <li>
-            <a href="#">
-            <img src="icons/Vector.svg" alt="Social handle">
-            </a>
-        </li>
+          <li>
+              <a href="github.com/Mukumbuta">
+              <img src="icons/github.svg" alt="My github account">
+              </a>
+          </li>
+          <li>
+              <a href="linkedin.com/mukumbuta">
+              <img src="icons/linkdin.svg" alt="My linkedin account">
+              </a>
+          </li>
+          <li>
+              <a href="#">
+              <img src="icons/win.svg" alt="Social handle">
+              </a>
+          </li>
+          <li>
+              <a href="twitter.com/Mukumbuta8">
+              <img src="icons/twitter.svg" alt="My twitter account">
+              </a>
+          </li>
+          <li>
+              <a href="#">
+              <img src="icons/Vector.svg" alt="Social handle">
+              </a>
+          </li>
         </ul>
+
+        <div class="primary-text-bg-image"></div>
     </section>
 
-    <section class="myprojects">
-      <h2 class="project-title">My Recent Works</h2>
-      <article class="myprojects project">
-        <div class="description">
+    <!-- My projects section  -->
+
+    <section class="my-projects">
+       <!-- title -->
+      <h1 class="my-projects-title">
+        My Recent Works
+      </h1>
+    
+      <!-- multi-post -->
+      
+      <article class="my-projects-multi-post">
+        <div class="multi-post-image-cont">
+          <img src="./icons/project_img.png" alt="fitness picture">
+        </div>
+        
+        <div class="multi-post-txt-btn">
           <h3>Multi-Post Stories</h3>
           <p>
             A daily selection of privately personalized reads; no accounts or sign-ups required 
             has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
           </p>
+
+          <div class="skills-container">
+            <ul class="skills">
+              <li class="css">css</li>
+              <li class="html">html</li>
+              <li class="boot">Bootstrap</li>
+              <li class="ruby">Ruby</li>
+            </ul>
+          </div>
+
+          <a href="github.com/Mukumbuta">
+            <button type="button" class="multi-post-btn">See Project</button>
+          </a>
         </div>
-        <ul class="skills">
-          <li class="css">css</li>
-          <li class="html">html</li>
-          <li class="boot">Bootstrap</li>
-          <li class="ruby">Ruby</li>
-        </ul>
-        <a href="github.com/Mukumbuta">
-          <button type="button" class="btn">See Project</button>
-        </a>
       </article>
-      <article class="myprojects project1">
-        <div class="description1">
+
+      <!-- actual projects -->
+      <div class="all-actual-projects">
+        <article class="my-projects-actual">
           <h2>Profesional Art Printing Data</h2>
+  
           <p>
             A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.
           </p>
+  
           <ul class="skills1">
             <li class="html1">html</li>
             <li class="boot1">Bootstrap</li>
             <li class="ruby1">Ruby</li>
           </ul>
-        </div>
+  
+          <a href="github.com/Mukumbuta">
+            <button type="button" class="my-projects-actual-btn multi-post-btn">See Project</button>
+          </a>
+  
+        </article>
 
-        <a href="github.com/Mukumbuta">
-          <button type="button" class="btn1">See Project</button>
-        </a>
-          
-      </article>
-      <article class="myprojects project2">
-        <div class="description2">
-          <h2>
-            Profesional Art Printing Data
-          </h2>
+        <article class="my-projects-actual">
+          <h2>Profesional Art Printing Data</h2>
+  
           <p>
             A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.
           </p>
-          <ul class="skills2">
-            <li class="html2">html</li>
-            <li class="boot2">Bootstrap</li>
-            <li class="ruby2">Ruby</li>
+  
+          <ul class="skills1">
+            <li class="html1">html</li>
+            <li class="boot1">Bootstrap</li>
+            <li class="ruby1">Ruby</li>
           </ul>
-        </div>
-        <a href="github.com/Mukumbuta">
-           <button type="button" class="btn2">See Project</button>
-        </a>
-      </article>
-      <article class="myprojects project3">
-        <div class="description3">
+  
+          <a href="github.com/Mukumbuta">
+            <button type="button" class="my-projects-actual-btn multi-post-btn">See Project</button>
+          </a>
+  
+        </article>
+
+        <article class="my-projects-actual">
           <h2>Profesional Art Printing Data</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or sign-ups required, has been the industry's standard.
-          </p>
-          <ul class="skills3">
-            <li class="html3">html</li>
-            <li class="boot3">Bootstrap</li>
-            <li class="ruby3">Ruby</li>
-          </ul>
-        </div>
-        <a href="github.com/Mukumbuta">
-          <button type="button" class="btn3">See Project</button>
-        </a>
-      </article>
-      <article class="myprojects project4">
-        <div class="description4">
-          <h2>Profesional Art Printing Data</h2>
+  
           <p>
             A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.
           </p>
-          <ul class="skills4">
-            <li class="html4">html</li>
-            <li class="boot4">Bootstrap</li>
-            <li class="ruby4">Ruby</li>
+  
+          <ul class="skills1">
+            <li class="html1">html</li>
+            <li class="boot1">Bootstrap</li>
+            <li class="ruby1">Ruby</li>
           </ul>
-        </div>
-        <a href="github.com/Mukumbuta">
-          <button type="button" class="btn4">See Project</button>
-        </a>
-      </article>
+  
+          <a href="github.com/Mukumbuta">
+            <button type="button" class="my-projects-actual-btn multi-post-btn">See Project</button>
+          </a>
+  
+        </article>
+        <article class="my-projects-actual">
+          <h2>Profesional Art Printing Data</h2>
+  
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.
+          </p>
+  
+          <ul class="skills1">
+            <li class="html1">html</li>
+            <li class="boot1">Bootstrap</li>
+            <li class="ruby1">Ruby</li>
+          </ul>
+  
+          <a href="github.com/Mukumbuta">
+            <button type="button" class="my-projects-actual-btn multi-post-btn">See Project</button>
+          </a>
+  
+        </article>
+        <article class="my-projects-actual">
+          <h2>Profesional Art Printing Data</h2>
+  
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.
+          </p>
+  
+          <ul class="skills1">
+            <li class="html1">html</li>
+            <li class="boot1">Bootstrap</li>
+            <li class="ruby1">Ruby</li>
+          </ul>
+  
+          <a href="github.com/Mukumbuta">
+            <button type="button" class="my-projects-actual-btn multi-post-btn">See Project</button>
+          </a>
+  
+        </article>
+        <article class="my-projects-actual">
+          <h2>Profesional Art Printing Data</h2>
+  
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.
+          </p>
+  
+          <ul class="skills1">
+            <li class="html1">html</li>
+            <li class="boot1">Bootstrap</li>
+            <li class="ruby1">Ruby</li>
+          </ul>
+  
+          <a href="github.com/Mukumbuta">
+            <button type="button" class="my-projects-actual-btn multi-post-btn">See Project</button>
+          </a>
+  
+        </article>
+      </div>
 
-      <section class="myprojects about">
-        <h2>About me</h2>
-        <p class="intro">
-          Hello I'm a software developer! 
-          I can help you build a product, feature or website Look through some of my work and experience! 
-          If you like what you see and have a project you need coded, don't hestiate to contact me.
-        </p>
-        <button type="button" class="mycv-btn">Get My Resume</button>
-        <img class="seperator" src="icons/lines.png" alt="">
-        <section class="mytechs">
-          <article class="languages">
-            <h3 class="heading">Language</h3>
-            <article class="tech-list">
-              <ul>
-                <li>Javascript</li>
-                <li>Ruby</li>
-                <li>html</li>
-                <li>css</li>
-              </ul>
-            </article>
-            <h3 class="heading1">Frameworks</h3>
-            <article class="tech-list">
-              <ul>
-                <li>Bootstrap</li>
-                <li>Ruby on Rails</li>
-                <li>RSPec</li>
-                <li>CapyBara</li>
-                <li>Selenium</li>
-              </ul>
-            </article>
-            <h3 class="heading2">Skills</h3>
-            <article class="tech-list">
-              <ul>
-                <li>Codekit</li>
-                <li>Github</li>
-                <li>Codepen</li>
-                <li>Gitlab</li>
-                <li>Terminal</li>
-              </ul>
-            </article>
-          </article>
-        </section>
-      </section>
+      
     </section>
-
+   <!-- End of my projects section -->
     <section class="contact-form-section">
       <p> 
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch. 

@@ -33,7 +33,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 152px 0 152px;
+  padding: 0 24px 0 24px;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0 152px 0 152px;
+  }
 }
 
 .mylogo-text {
@@ -369,6 +375,11 @@ body {
   margin-top: 12px;
   margin-left: 16px;
 }
+@media (min-width: 768px) {
+  .my-projects-actual ul {
+    margin-bottom: 44px;
+  }
+}
 
 .html1,
 .boot1,
@@ -388,25 +399,74 @@ body {
   margin-top: 22px;
 }
 
+.recent-break {
+  display: none;
+}
 @media (min-width: 768px) {
   .my-projects-title {
     text-align: left;
     border-bottom: none;
-    background: aqua;
-    display: inline-block;
-    position: relative;
-    padding: 142px;
-    border: thin solid black;
-  }
-  .my-projects-title::after {
-    content: '';
-    height: 5px;
-    background: #0d151e;
-    width: 30%;
-    position: absolute;
     display: block;
+    position: relative;
+    line-height: 52px;
+    margin-bottom: 0;
   }
 
+ .recent-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .recent-break {
+    display: block;
+    width: 66%;
+    height: 1px;
+  }
+
+  .my-projects-multi-post {
+    display: flex;
+    height: 448px;
+    gap: 24px;
+    margin-bottom: 24px;
+
+  }
+
+  .multi-post-image-cont {
+    flex: 4;
+  }
+  .multi-post-image-cont img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .multi-post-txt-btn {
+    flex: 2.62;
+  }
+  .multi-post-txt-btn h3 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .multi-post-txt-btn h3 {
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 28px;
+    color: #091E42;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+
+
+ 
+}
+  
+
+@media (min-width: 768px){
+  .my-projects{
+  padding: 136px 141px;
+}
 }
 
 
@@ -415,6 +475,7 @@ body {
   background: black;
   margin-top: 132px;
   height: 2060px;
+  margin-inline: -24px;
 }
 
 .text-button-wrapper {
@@ -642,4 +703,65 @@ textarea:placeholder-shown {
   bottom: 12px;
   background: #0d151e;
   border-radius: 10px;
+}
+
+/* working on project section for grid  */
+
+.new {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .all-actual-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 24px;
+    grid-template-rows: 435px;
+  }
+
+  .myp-one {
+    display: none;
+  }
+
+  .no-overlay {
+    background-image: url(../icons/profesional-clear.png);
+    background-position-y: -26%;
+  }
+
+  .myp-one-shown {
+    margin-top: 85%;
+  }
+
+  .old {
+    display: none;
+  }
+
+  .new {
+    display: block;
+  }
+
+  .actual-two {
+    background-image: url(../icons/data-dashboard.png);
+  }
+
+  .disappear {
+    display: none;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  .adj-actual-h2 {
+    margin-top: 54px;
+  }
+
+  .adj-actual-h3 {
+    margin-top: 98px;
+  }
+
+
+  .actual-three {
+    background-image: url(../icons/web-portfolio.png);
+  }
 }

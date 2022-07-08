@@ -154,9 +154,6 @@ body{
   margin-bottom: 80px;
 }
 
-.my-projects-multi-post{
-  
-}
 .multi-post-image-cont {
   display: flex;
   justify-content: center;
@@ -228,7 +225,9 @@ body{
   color: #FFFFFF;
   padding-top: 84px;
   background-image: url(../icons/projectsbackground.svg);
-  
+  background-repeat: no-repeat;
+  background-size: 100%;
+    background-position-y: center;
 }
 .my-projects-actual h2 {
   font-family: 'Crete Round';
@@ -373,10 +372,6 @@ body{
 }
 
 /* Contact form */
-.contact-form-section {
-  /* border-bottom: 136px; */
-}
-
 .contact-form-section p {
   height: 216px;
   font-family: 'Inter';
@@ -389,7 +384,6 @@ body{
   padding-inline: 24px;
   margin-top: 120px;
 }
-
 
 .contact-form  {
   height: 400px;
@@ -437,12 +431,6 @@ textarea {
   height: 114px;
 }
 
-/* textarea::placeholder {
-  text-align: left;
-  font-size: --placeholderFontSize;
-  
-} */
-
 .button {
   display: flex;
   justify-content: center;
@@ -480,11 +468,10 @@ textarea {
 }
 
 .bottom-line {
-  margin-top: 23px;
-  width: 40%;
+  margin-top: 17px;
+  width: 35%;
   height: 5px;
-  left: calc(50% - 134px/2 - 0.5px);
-  bottom: 8px;
+  bottom: 12px;
   background: #0D151E;
   border-radius: 10px;
 }

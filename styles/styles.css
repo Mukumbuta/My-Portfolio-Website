@@ -3,17 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-html{
+html {
   box-sizing: border-box;
 }
 
-*, *::after, *::before{
+*,
+*::after,
+*::before {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
 }
 
-body{
+body {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -34,7 +36,7 @@ body{
   padding: 0 36px 0 24px;
 }
 
-.navbar .mylogo a {
+.mylogo-text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -44,37 +46,36 @@ body{
   text-decoration: none;
 }
 
-.navbar .toolbar{
+.navbar .toolbar {
   width: 16px;
   height: 16px;
 }
 
-.navbar .toolbar:hover{
+.navbar .toolbar:hover {
   cursor: pointer;
 }
-.navbar .toolbar .bar{
+
+.navbar .toolbar .bar {
   width: 100%;
   height: 2px;
-  background-color: #ACB7C3;
+  background-color: #acb7c3;
   margin-top: 5px;
-
 }
 
-.menubar1{
+.menubar1 {
   margin-top: 0;
 }
 
 
 /* Primary text section */
 
-.primary-text{
-  background-color: #1C1A19;
+.primary-text {
+  background-color: #1c1a19;
   padding: 120px 24px 130px;
   position: relative;
-  
 }
-  
-.primary-text .title{
+
+.primary-text .title {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -83,7 +84,8 @@ body{
   letter-spacing: 0.37px;
   color: #ff6b00;
 }
-.primary-text .secondary-text{
+
+.primary-text .secondary-text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -96,7 +98,7 @@ body{
   margin-top: 12px;
 }
 
-.primary-text-description{
+.primary-text-description {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -104,10 +106,9 @@ body{
   line-height: 24px;
   color: #fff;
   margin-bottom: 22px;
-
 }
 
-.media-icons{
+.media-icons {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -120,7 +121,7 @@ body{
   flex-grow: 0;
 }
 
-.primary-text .media-icons li {
+#media-icon {
   list-style-type: none;
 }
 
@@ -139,7 +140,7 @@ body{
 /* My projects section  */
 
 .my-projects {
-  padding:24px;
+  padding: 24px;
   color: #000e27;
 }
 
@@ -147,7 +148,7 @@ body{
   font-size: 40px;
   font-weight: 400;
   line-height: 110px;
-  color: #1C1A19;
+  color: #1c1a19;
   font-family: 'Crete Round', serif;
   text-align: center;
   border-bottom: 1px solid #212121;
@@ -157,12 +158,11 @@ body{
 .multi-post-image-cont {
   display: flex;
   justify-content: center;
-
 }
+
 .multi-post-image-cont img {
   width: 327px;
   height: 237px;
-
 }
 
 .multi-post-txt-btn h3 {
@@ -171,30 +171,36 @@ body{
   line-height: 44px;
   display: flex;
   align-items: center;
-  color: #091E42;
+  color: #091e42;
   font-family: 'Crete Round', serif;
   margin-top: 24px;
 }
+
 .multi-post-txt-btn p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
   margin-bottom: 12px;
 }
+
 .skills-container ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 24px;
 }
-.skills-container ul li{
+
+.css,
+.html,
+.boot,
+.ruby {
   list-style-type: none;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #091E42;
-  border: 1px solid #8993A4;
+  color: #091e42;
+  border: 1px solid #8993a4;
   padding: 10px;
   text-align: center;
 }
@@ -210,41 +216,38 @@ body{
   color: #fff;
   padding: 12px;
   margin-bottom: 24px;
-  background: #FF6B00;
+  background: #ff6b00;
   cursor: pointer;
   border: none;
-}
-
-.multi-post-txt-btn a {
-  text-decoration: none;
-  margin-top: 12px;
-  display: block;
+  margin-top: 22px;
 }
 
 .my-projects-actual {
-  color: #FFFFFF;
+  color: #fff;
   padding-top: 84px;
   background-image: url(../icons/projectsbackground.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-    background-position-y: center;
+  background-position-y: center;
 }
+
 .my-projects-actual h2 {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #fff;
   margin-bottom: 12px;
   margin-left: 16px;
 }
+
 .my-projects-actual p {
-    font-size: 16px;
+  font-size: 16px;
   line-height: 24px;
   margin-left: 16px;
-
 }
+
 .my-projects-actual ul {
   display: grid;
   grid-template-columns: 1fr 1.7fr 1fr;
@@ -253,7 +256,10 @@ body{
   margin-top: 12px;
   margin-left: 16px;
 }
-.my-projects-actual ul li{
+
+.html1,
+.boot1,
+.ruby1 {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -263,11 +269,6 @@ body{
   text-align: center;
 }
 
-.my-projects-actual a{
-  text-decoration: none;
-  margin-top: 12px;
-  display: block;
-}
 .my-projects-actual-btn {
   width: 100%;
   display: inherit;
@@ -282,25 +283,25 @@ body{
 }
 
 .text-button-wrapper {
-  padding: 120px 24px 0px;
+  padding: 120px 24px 0;
 }
 
 .about-me h2 {
   height: 79px;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
   line-height: 88px;
   letter-spacing: 0.37px;
-  color: #FF6B00;
+  color: #ff6b00;
 }
 
 .about-me p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #F4F5F7;
+  color: #f4f5f7;
   margin-top: 24px;
   position: relative;
 }
@@ -321,22 +322,22 @@ body{
 }
 
 .about-me-seperator {
-  top: calc(50% - 0px/2 + 0.5px);
-  border: 1px solid #FFFFFF;
+  top: calc(50% - 0px / 2 + 0.5px);
+  border: 1px solid #fff;
   width: 90%;
   margin-left: 24px;
   margin-top: 22.69px;
 }
+
 .technologies-main-cont {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
-  
 
 .technologies-main-cont ul {
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .my-stacks {
@@ -350,7 +351,7 @@ body{
   font-size: 32px;
   line-height: 44px;
   margin-top: 44px;
-  color: #FFFFFF;
+  color: #fff;
   position: relative;
 }
 
@@ -359,15 +360,14 @@ body{
   display: block;
   width: 18px;
   height: 18px;
-  background: #FF6B00;;
+  background: #ff6b00;
   position: absolute;
-  
 }
 
 .about-lang::before {
   left: -12px;
   top: 31%;
-  transform: rotate(-45deg)
+  transform: rotate(-45deg);
 }
 
 .about-frame::before {
@@ -381,15 +381,14 @@ body{
   border-radius: 50%;
 }
 
-
 .skill-list-heading ul {
   text-align: center;
 }
 
-.technologies-main-cont ul li {
+.tech-li {
   list-style-type: none;
   margin-top: 22px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -397,42 +396,43 @@ body{
 }
 
 .skill-list {
-  margin-bottom: 131.54px
+  margin-bottom: 131.54px;
 }
 
 /* Contact form */
 .contact-form-section p {
   height: 216px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   padding-inline: 24px;
   margin-top: 120px;
 }
 
-.contact-form  {
+.contact-form {
   height: 400px;
   padding-inline: 24px;
 }
-.contact-form-section ul li {
-  padding: 10px; 
+
+.contact-li {
+  padding: 10px;
 }
 
 .full-name {
   border: none;
   outline: none;
-  border-bottom: thin solid #DBD8D7;
+  border-bottom: thin solid #dbd8d7;
   padding: 24px;
-  width: 100%; 
+  width: 100%;
 }
 
 .contact-form-section .message {
-  background: #FBF8F7;
-  Height: 114px;
+  background: #fbf8f7;
+  height: 114px;
   width: 100%;
   border: none;
   outline: none;
@@ -443,22 +443,22 @@ input[type='text']::placeholder {
   margin-left: 24px;
 }
 
-:root { 
-  --textareaHeight : 150px;
-  --placeholderFontSize : 15px;
+:root {
+  --textareaHeight: 150px;
+  --placeholderFontSize: 15px;
 }
 
 textarea {
-  display: block; 
-  height: var(--textareaHeight);
+  display: block;
   padding: 0 6px 6px 0;
   height: 114px;
   margin-bottom: 10px;
 }
 
-textarea:placeholder-shown, textarea {
+textarea,
+textarea:placeholder-shown {
   padding: 10px 20px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -468,7 +468,7 @@ textarea:placeholder-shown, textarea {
 .button {
   display: flex;
   justify-content: center;
-  color:black;
+  color: black;
   list-style-type: none;
 }
 
@@ -478,7 +478,7 @@ textarea:placeholder-shown, textarea {
   justify-content: center;
   align-items: center;
   margin-top: 136px;
-  border-top: 1px solid rgb(209, 205, 205) 
+  border-top: 1px solid rgb(209, 205, 205);
 }
 
 .footer .media-icons {
@@ -486,7 +486,7 @@ textarea:placeholder-shown, textarea {
   right: 8.33%;
   top: 16.67%;
   bottom: 16.67%;
-  color: #505F79;
+  color: #505f79;
   list-style-type: none;
   margin-top: 25px;
 }
@@ -498,7 +498,6 @@ textarea:placeholder-shown, textarea {
 .bottom-line-cont {
   display: flex;
   justify-content: center;
-
 }
 
 .bottom-line {
@@ -506,6 +505,6 @@ textarea:placeholder-shown, textarea {
   width: 35%;
   height: 5px;
   bottom: 12px;
-  background: #0D151E;
+  background: #0d151e;
   border-radius: 10px;
 }

@@ -765,3 +765,95 @@ textarea:placeholder-shown {
     background-image: url(../icons/web-portfolio.png);
   }
 }
+
+.hide-small {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  
+  .about-me {
+    margin-top: -70px;
+    padding-left: 142px;
+  }
+
+  .about-me-one {
+    border: thin solid white;
+    display: flex;
+    height: 566px;
+    align-items: center;
+  }
+
+  .text-button-wrapper {
+    flex: 3;
+  }
+
+  .about-me-image {
+    border: thin solid darkcyan;
+    flex: 4;
+  }
+
+  .actual-about-me-img {
+    margin-top: 0;
+  }
+
+  .about-me-seperator {
+    margin-top: 0;
+  }
+
+  .my-stacks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+  
+  .about-lang::before {
+    left: 129px;
+  }
+
+  .about-lang::before {
+
+    left: 129px;
+    top: 31%;
+    transform: rotate(-45deg);
+
+}
+.skill-list-heading::before {
+
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: #ff6b00;
+    position: absolute;
+
+}
+
+ .skill-list-heading {
+  margin-left: -118px;
+}   
+
+  .about-frame::before {
+    left: 112px;
+  }
+  .about-skills::before {
+    left: 220px;
+  }
+
+  .abt-ski {
+    margin-left: -225px;
+  }
+
+  .tech-li {
+    text-align: left;
+  }
+
+  .hide-small {
+    display: block;
+  }
+  
+  .hide-big {
+    display: none;
+  }
+
+}

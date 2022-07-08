@@ -351,7 +351,36 @@ body{
   line-height: 44px;
   margin-top: 44px;
   color: #FFFFFF;
+  position: relative;
 }
+
+.skill-list-heading::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: #FF6B00;;
+  position: absolute;
+  
+}
+
+.about-lang::before {
+  left: -12px;
+  top: 31%;
+  transform: rotate(-45deg)
+}
+
+.about-frame::before {
+  left: -40px;
+  top: 33%;
+}
+
+.about-skills::before {
+  top: 33%;
+  left: 26px;
+  border-radius: 50%;
+}
+
 
 .skill-list-heading ul {
   text-align: center;
@@ -398,20 +427,16 @@ body{
   outline: none;
   border-bottom: thin solid #DBD8D7;
   padding: 24px;
-  width: 327px; 
+  width: 100%; 
 }
 
 .contact-form-section .message {
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
   background: #FBF8F7;
   Height: 114px;
-  width: 327px;
+  width: 100%;
   border: none;
   outline: none;
-  margin-top: 24px;
+  resize: vertical;
 }
 
 input[type='text']::placeholder {
@@ -427,8 +452,17 @@ textarea {
   display: block; 
   height: var(--textareaHeight);
   padding: 0 6px 6px 0;
-  margin-left: 24px;
   height: 114px;
+  margin-bottom: 10px;
+}
+
+textarea:placeholder-shown, textarea {
+  padding: 10px 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .button {

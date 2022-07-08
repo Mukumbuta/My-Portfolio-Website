@@ -222,33 +222,79 @@
         </article>
       </div>
 
-      
+      <section class="about-me">
+        <div class="text-button-wrapper">
+          <h2>About me</h2>
+          <p class="intro">
+            Hello I'm a software developer! 
+            I can help you build a product, feature or website Look through some of my work and experience! 
+            If you like what you see and have a project you need coded, don't hestiate to contact me.
+          </p>
+          <button type="button" class="my-cv-btn multi-post-btn">Get My Resume</button>
+        </div>
+        <div class="about-me-image"><img class="actual-about-me-img" src="./icons/abackground.svg" alt=""></div>
+        <div class="about-me-seperator"></div>
+        <section class="technologies-main-cont">
+          <article class="my-stacks">
+            <article class="tech-list">
+              <h3 class="skill-list-heading">Language</h3>
+              <ul>
+                <li>Javascript</li>
+                <li>Ruby</li>
+                <li>html</li>
+                <li>css</li>
+              </ul>
+            </article>
+            <article class="framework-list">
+              <h3 class="skill-list-heading">Frameworks</h3>
+              <ul>
+                <li>Bootstrap</li>
+                <li>Ruby on Rails</li>
+                <li>RSPec</li>
+                <li>CapyBara</li>
+                <li>Selenium</li>
+              </ul>
+            </article>
+            <article class="skill-list">
+              <h3 class="skill-list-heading">Skills</h3>
+              <ul>
+                <li>Codekit</li>
+                <li>Github</li>
+                <li>Codepen</li>
+                <li>Gitlab</li>
+                <li>Terminal</li>
+              </ul>
+            </article>
+          </article>
+        </section>
+      </section>
     </section>
-   <!-- End of my projects section -->
+
+    </section>
+   <!-- End of my About section -->
     <section class="contact-form-section">
       <p> 
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch. 
       </p>
-      <form id="contact-form" action="https://formspree.io/f/xvoljzvv" method="post">
+      <form class="contact-form" action="https://formspree.io/f/xvoljzvv" method="post">
         <ul>
           <li>
-            <input type="text" class="full_name" id="full_name"  placeholder="Full name" maxlength="30" required/>
+            <input type="text" class="full-name" id="full_name"  placeholder="Full name" maxlength="30" required/>
           </li>
           <li>
-            <input type="email" class="full_name" id="mail" placeholder="Email address" required />
+            <input type="email" class="full-name" id="mail" placeholder="Email address" required />
           </li>
-          <li>
+          <li class="message-cont">
             <textarea class="message" id="user_message" name="message" maxlength="500" placeholder="Enter text here" required></textarea>
           </li>
           <li class="button">
-            <button type="submit" form="contact-form" class="submit-btn" value="Submit"> Get in touch </button>
+            <button type="submit" form="contact-form" class="submit-btn multi-post-btn" value="Submit"> Get in touch </button>
           </li>
         </ul>
       </form>
     </section>
-
     <footer class="footer">
-      <ul>
+      <ul class="media-icons">
         <li>
           <a href="https://github.com/Mukumbuta">
             <img src="icons/github.svg" alt="github.com" />
@@ -256,25 +302,28 @@
         </li>
         <li>
           <a href="https://www.linkedin.com/in/mukumbuta/">
-            <img src="icons/linkdin.svg" alt="linkdin.com" />
+            <img class="icon-color" src="icons/linkdin.svg" alt="linkdin.com" />
           </a>
         </li>
         <li>
           <a href="https://facebook.com/mukumbuta-simasiku">
-            <img src="icons/win.svg" alt="facebook" />
+            <img class="icon-color"  src="icons/win.svg" alt="facebook" />
           </a>
         </li>
         <li>
           <a href="https://twitter.com/Mukumbuta8">
-            <img src="icons/twitter.svg" alt="twitter.com" />
+            <img class="icon-color"  src="icons/twitter.svg" alt="twitter.com" />
           </a>
         </li>
         <li>
           <a href="https://instagram.com/Mukumbuta22">
-            <img src="icons/Vector.svg" alt="instagram" />
+            <img class="icon-color" src="icons/Vector.svg" alt="instagram" />
           </a>
         </li>
       </ul>
     </footer>
+    <div class="bottom-line-cont">
+      <div class="bottom-line"></div>
+    </div>
   </body>
 </html>

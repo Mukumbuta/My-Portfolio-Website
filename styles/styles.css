@@ -107,7 +107,7 @@ body{
 
 }
 
-.primary-text .media-icons{
+.media-icons{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -140,7 +140,7 @@ body{
 
 .my-projects {
   padding:24px;
-  color: #091E42;
+  color: #000e27;
 }
 
 .my-projects-title {
@@ -262,7 +262,6 @@ body{
   padding: 10px;
   background: rgba(255, 255, 255, 0.24);
   text-align: center;
-
 }
 
 .my-projects-actual a{
@@ -274,4 +273,218 @@ body{
   width: 100%;
   display: inherit;
   margin-top: 22px;
+}
+
+/* About section */
+.about-me {
+  background: black;
+  margin-top: 132px;
+  height: 2060px;
+}
+
+.text-button-wrapper {
+  padding: 120px 24px 0px;
+}
+
+.about-me h2 {
+  height: 79px;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #FF6B00;
+}
+
+.about-me p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F4F5F7;
+  margin-top: 24px;
+  position: relative;
+}
+
+.my-cv-btn {
+  margin-top: 24px;
+  padding-inline: 24px;
+}
+
+.about-me-image {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.actual-about-me-img {
+  margin-top: -113px;
+}
+
+.about-me-seperator {
+  top: calc(50% - 0px/2 + 0.5px);
+  border: 1px solid #FFFFFF;
+  width: 90%;
+  margin-left: 24px;
+  margin-top: 22.69px;
+}
+.technologies-main-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+  
+
+.technologies-main-cont ul {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.my-stacks {
+  margin-top: 136.73px;
+}
+
+.skill-list-heading {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 44px;
+  color: #FFFFFF;
+}
+
+.skill-list-heading ul {
+  text-align: center;
+}
+
+.technologies-main-cont ul li {
+  list-style-type: none;
+  margin-top: 22px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+}
+
+.skill-list {
+  margin-bottom: 131.54px
+}
+
+/* Contact form */
+.contact-form-section {
+  /* border-bottom: 136px; */
+}
+
+.contact-form-section p {
+  height: 216px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172B4D;
+  padding-inline: 24px;
+  margin-top: 120px;
+}
+
+
+.contact-form  {
+  height: 400px;
+  padding-inline: 24px;
+}
+.contact-form-section ul li {
+  padding: 10px; 
+}
+
+.full-name {
+  border: none;
+  outline: none;
+  border-bottom: thin solid #DBD8D7;
+  padding: 24px;
+  width: 327px; 
+}
+
+.contact-form-section .message {
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: #FBF8F7;
+  Height: 114px;
+  width: 327px;
+  border: none;
+  outline: none;
+  margin-top: 24px;
+}
+
+input[type='text']::placeholder {
+  margin-left: 24px;
+}
+
+:root { 
+  --textareaHeight : 150px;
+  --placeholderFontSize : 15px;
+}
+
+textarea {
+  display: block; 
+  height: var(--textareaHeight);
+  padding: 0 6px 6px 0;
+  margin-left: 24px;
+  height: 114px;
+}
+
+/* textarea::placeholder {
+  text-align: left;
+  font-size: --placeholderFontSize;
+  
+} */
+
+.button {
+  display: flex;
+  justify-content: center;
+  color:black;
+  list-style-type: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 136px;
+  border-top: 1px solid rgb(209, 205, 205) 
+}
+
+.footer .media-icons {
+  left: 8.33%;
+  right: 8.33%;
+  top: 16.67%;
+  bottom: 16.67%;
+  color: #505F79;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+.contact-form ul {
+  margin-top: 73px;
+}
+
+.bottom-line-cont {
+  display: flex;
+  justify-content: center;
+
+}
+
+.bottom-line {
+  margin-top: 23px;
+  width: 40%;
+  height: 5px;
+  left: calc(50% - 134px/2 - 0.5px);
+  bottom: 8px;
+  background: #0D151E;
+  border-radius: 10px;
 }

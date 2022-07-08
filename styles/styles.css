@@ -51,6 +51,46 @@ body {
   height: 16px;
 }
 
+/* Media queries */
+/* @media only screen and (max-width: 600px){
+  .desktop-navbar .desktop-navbar-links {
+    display: none;
+  }
+} */
+
+.desktop-navbar {
+  
+}
+
+.desktop-navbar-links {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.desktop-navbar-links a:link {
+  text-decoration: none;
+}
+
+.desktop-navbar-links a {
+  height: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  padding-right: 32px;
+}
+
+
+
+
+
+
+
+
 .navbar .toolbar:hover {
   cursor: pointer;
 }
@@ -134,6 +174,70 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+@media (min-width: 768px) {
+  .primary-text {
+    padding: 0px;
+    display: flex;
+    height: 798px;
+    align-items: center;
+    padding-left: 32px;
+  } 
+
+  .text-container {
+    flex: 4.2;
+    order: 3;
+  
+  }
+
+  .primary-text .title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+    color: #F55800;
+  }
+
+  .primary-text .secondary-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .primary-text-description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #F4F5F7;
+  }
+
+  .media-icons {
+    flex-direction: column;
+    width: 44px;
+    height: 230px;
+    order: 1;
+    margin-right: 76px;
+  }
+
+  .primary-text-bg-image {
+    position: static;
+    flex-grow: 3;
+    order: 3;
+    background-image: url(../icons/Illustration-header.png);
+    background-size: cover;
+    height: 100%;
+  }
+  
 }
 
 /* My projects section  */

@@ -33,7 +33,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 36px 0 24px;
+  padding: 0 152px 0 152px;
 }
 
 .mylogo-text {
@@ -52,11 +52,21 @@ body {
 }
 
 /* Media queries */
-/* @media only screen and (max-width: 600px){
+.desktop-navbar .desktop-navbar-links {
+  display: none;
+}
+
+@media only screen and (min-width: 768px){
   .desktop-navbar .desktop-navbar-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .toolbar {
     display: none;
   }
-} */
+}
+
 
 .desktop-navbar {
   
@@ -377,6 +387,28 @@ body {
   display: inherit;
   margin-top: 22px;
 }
+
+@media (min-width: 768px) {
+  .my-projects-title {
+    text-align: left;
+    border-bottom: none;
+    background: aqua;
+    display: inline-block;
+    position: relative;
+    padding: 142px;
+    border: thin solid black;
+  }
+  .my-projects-title::after {
+    content: '';
+    height: 5px;
+    background: #0d151e;
+    width: 30%;
+    position: absolute;
+    display: block;
+  }
+
+}
+
 
 /* About section */
 .about-me {

@@ -33,7 +33,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 36px 0 24px;
+  padding: 0 24px 0 24px;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0 152px 0 152px;
+  }
 }
 
 .mylogo-text {
@@ -49,6 +55,44 @@ body {
 .navbar .toolbar {
   width: 16px;
   height: 16px;
+}
+
+/* Media queries */
+@media only screen and (min-width: 768px) {
+  .desktop-navbar .desktop-navbar-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .toolbar {
+    display: none;
+  }
+}
+
+.desktop-navbar-links {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.desktop-navbar .desktop-navbar-links {
+  display: none;
+}
+
+.desktop-navbar-links a {
+  height: 20px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  padding-right: 32px;
+}
+
+.desktop-navbar-links a:link {
+  text-decoration: none;
 }
 
 .navbar .toolbar:hover {
@@ -134,6 +178,68 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+@media (min-width: 768px) {
+  .primary-text {
+    padding: 0;
+    display: flex;
+    height: 798px;
+    align-items: center;
+    padding-left: 32px;
+  }
+
+  .text-container {
+    flex: 5;
+    order: 3;
+  }
+
+  .primary-text .title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 82px;
+    color: #f55800;
+  }
+
+  .primary-text .secondary-text {
+    font-family: 'Inter'sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .primary-text-description {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+  }
+
+  .primary-icons {
+    flex-direction: column;
+    width: 44px;
+    height: 230px;
+    order: 1;
+    margin-right: 76px;
+  }
+
+  .primary-text-bg-image {
+    position: static;
+    flex-grow: 3;
+    order: 3;
+    background-image: url(../icons/Illustration-header.png);
+    background-size: cover;
+    height: 100%;
+  }
 }
 
 /* My projects section  */
@@ -256,6 +362,12 @@ body {
   margin-left: 16px;
 }
 
+@media (min-width: 768px) {
+  .my-projects-actual ul {
+    margin-bottom: 44px;
+  }
+}
+
 .html1,
 .boot1,
 .ruby1 {
@@ -274,11 +386,74 @@ body {
   margin-top: 22px;
 }
 
+.recent-break {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .my-projects-title {
+    text-align: left;
+    border-bottom: none;
+    display: block;
+    position: relative;
+    line-height: 52px;
+    margin-bottom: 0;
+  }
+
+  .recent-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .recent-break {
+    display: block;
+    width: 66%;
+    height: 1px;
+  }
+
+  .my-projects-multi-post {
+    display: flex;
+    height: 448px;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .multi-post-image-cont {
+    flex: 4;
+  }
+
+  .multi-post-image-cont img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .multi-post-txt-btn {
+    flex: 2.62;
+  }
+
+  .multi-post-txt-btn h3 {
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-projects {
+    padding: 136px 141px;
+  }
+}
+
 /* About section */
 .about-me {
   background: black;
   margin-top: 132px;
   height: 2060px;
+  margin-inline: -24px;
+  padding-left: 24px;
 }
 
 .text-button-wrapper {
@@ -506,4 +681,183 @@ textarea:placeholder-shown {
   bottom: 12px;
   background: #0d151e;
   border-radius: 10px;
+}
+
+/* Contact form for desktop version */
+
+@media (min-width: 768px) {
+  .contact-form-section {
+    display: flex;
+  }
+
+  .contact-form-text {
+    flex: 0.47;
+    text-align: left;
+    margin-left: 135px;
+  }
+
+  .contact-form {
+    flex: 1;
+    margin-top: 29px;
+    margin-bottom: 154px;
+  }
+
+  .full-name {
+    padding-bottom: 10px;
+  }
+
+  .button {
+    display: flex;
+    justify-content: left;
+    margin-top: -20px;
+  }
+
+  .bottom-line-cont {
+    display: none;
+  }
+}
+
+/* working on project section for grid  */
+.new {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .all-actual-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 24px;
+    grid-template-rows: 435px;
+  }
+
+  .myp-one {
+    display: none;
+  }
+
+  .no-overlay {
+    background-image: url(../icons/profesional-clear.png);
+    background-position-y: -26%;
+  }
+
+  .myp-one-shown {
+    margin-top: 85%;
+  }
+
+  .old {
+    display: none;
+  }
+
+  .new {
+    display: block;
+  }
+
+  .actual-two {
+    background-image: url(../icons/data-dashboard.png);
+  }
+
+  .disappear {
+    display: none;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  .adj-actual-h2 {
+    margin-top: 54px;
+  }
+
+  .adj-actual-h3 {
+    margin-top: 98px;
+  }
+
+  .actual-three {
+    background-image: url(../icons/web-portfolio.png);
+  }
+}
+
+.hide-small {
+  display: none;
+}
+
+/* About me section media queries */
+@media (min-width: 768px) {
+  .about-me {
+    margin-top: -70px;
+    padding-left: 142px;
+    height: 1328px;
+  }
+
+  .about-me-one {
+    /* border: thin solid white; */
+    display: flex;
+    height: 566px;
+    align-items: center;
+  }
+
+  .text-button-wrapper {
+    flex: 3;
+  }
+
+  .about-me-image {
+    /* border: thin solid darkcyan; */
+    flex: 4;
+  }
+
+  .actual-about-me-img {
+    margin-top: 0;
+  }
+
+  .about-me-seperator {
+    margin-top: 0;
+  }
+
+  .my-stacks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+
+  .about-lang::before {
+    left: 129px;
+    top: 31%;
+    transform: rotate(-45deg);
+  }
+
+  .skill-list-heading::before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: #ff6b00;
+    position: absolute;
+  }
+
+  .skill-list-heading {
+    margin-left: -118px;
+  }
+
+  .about-frame::before {
+    left: 112px;
+  }
+
+  .about-skills::before {
+    left: 220px;
+  }
+
+  .abt-ski {
+    margin-left: -225px;
+  }
+
+  .tech-li {
+    text-align: left;
+  }
+
+  .hide-small {
+    display: block;
+  }
+
+  .hide-big {
+    display: none;
+  }
 }

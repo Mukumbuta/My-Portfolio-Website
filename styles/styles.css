@@ -88,7 +88,6 @@ body {
   .nav-email {
     margin-top: 30px;
   }
-
 }
 
 .desktop-navbar-links a {
@@ -909,6 +908,7 @@ textarea:placeholder-shown {
   0% {
     position: relative;
     left: -200px;
+
     @media (min-width: 768px) {
       left: -288px;
     }
@@ -922,7 +922,7 @@ textarea:placeholder-shown {
 .animate-logo {
   animation-name: lg-animation;
   animation-timing-function: ease-in-out;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-delay: none;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;

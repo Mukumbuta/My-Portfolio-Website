@@ -58,11 +58,7 @@ body {
 }
 
 /* Media queries */
-.desktop-navbar .desktop-navbar-links {
-  display: none;
-}
-
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   .desktop-navbar .desktop-navbar-links {
     display: flex;
     align-items: center;
@@ -73,11 +69,6 @@ body {
   }
 }
 
-
-.desktop-navbar {
-  
-}
-
 .desktop-navbar-links {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -85,13 +76,13 @@ body {
   gap: 10px;
 }
 
-.desktop-navbar-links a:link {
-  text-decoration: none;
+.desktop-navbar .desktop-navbar-links {
+  display: none;
 }
 
 .desktop-navbar-links a {
   height: 20px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -100,12 +91,9 @@ body {
   padding-right: 32px;
 }
 
-
-
-
-
-
-
+.desktop-navbar-links a:link {
+  text-decoration: none;
+}
 
 .navbar .toolbar:hover {
   cursor: pointer;
@@ -194,17 +182,16 @@ body {
 
 @media (min-width: 768px) {
   .primary-text {
-    padding: 0px;
+    padding: 0;
     display: flex;
     height: 798px;
     align-items: center;
     padding-left: 32px;
-  } 
+  }
 
   .text-container {
     flex: 5;
     order: 3;
-  
   }
 
   .primary-text .title {
@@ -212,29 +199,29 @@ body {
     font-weight: 400;
     font-size: 65px;
     line-height: 82px;
-    color: #F55800;
+    color: #f55800;
   }
 
   .primary-text .secondary-text {
-    font-family: 'Inter';
+    font-family: 'Inter'sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: #fff;
     margin-top: 24px;
     margin-bottom: 24px;
   }
 
   .primary-text-description {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    color: #F4F5F7;
+    color: #f4f5f7;
   }
 
   .primary-icons {
@@ -253,7 +240,6 @@ body {
     background-size: cover;
     height: 100%;
   }
-  
 }
 
 /* My projects section  */
@@ -414,7 +400,7 @@ body {
     margin-bottom: 0;
   }
 
- .recent-cont {
+  .recent-cont {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -431,46 +417,35 @@ body {
     height: 448px;
     gap: 24px;
     margin-bottom: 24px;
-
   }
 
   .multi-post-image-cont {
     flex: 4;
   }
+
   .multi-post-image-cont img {
     width: 100%;
     height: 100%;
   }
 
-
   .multi-post-txt-btn {
     flex: 2.62;
   }
+
   .multi-post-txt-btn h3 {
     font-size: 40px;
     line-height: 52px;
-  }
-  .multi-post-txt-btn h3 {
-    font-family: 'Inter';
-    font-size: 20px;
-    line-height: 28px;
-    color: #091E42;
+    color: #091e42;
     margin-top: 24px;
     margin-bottom: 24px;
   }
-
-
-
- 
-}
-  
-
-@media (min-width: 768px){
-  .my-projects{
-  padding: 136px 141px;
-}
 }
 
+@media (min-width: 768px) {
+  .my-projects {
+    padding: 136px 141px;
+  }
+}
 
 /* About section */
 .about-me {
@@ -736,17 +711,13 @@ textarea:placeholder-shown {
     justify-content: left;
     margin-top: -20px;
   }
+
   .bottom-line-cont {
     display: none;
   }
 }
 
-  
-
-
-
 /* working on project section for grid  */
-
 .new {
   display: none;
 }
@@ -800,7 +771,6 @@ textarea:placeholder-shown {
     margin-top: 98px;
   }
 
-
   .actual-three {
     background-image: url(../icons/web-portfolio.png);
   }
@@ -847,19 +817,14 @@ textarea:placeholder-shown {
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
   }
-  
-  .about-lang::before {
-    left: 129px;
-  }
 
   .about-lang::before {
     left: 129px;
     top: 31%;
     transform: rotate(-45deg);
-
   }
-.skill-list-heading::before {
 
+  .skill-list-heading::before {
     content: '';
     display: block;
     width: 18px;
@@ -868,13 +833,14 @@ textarea:placeholder-shown {
     position: absolute;
   }
 
- .skill-list-heading {
+  .skill-list-heading {
     margin-left: -118px;
-  }   
+  }
 
   .about-frame::before {
     left: 112px;
   }
+
   .about-skills::before {
     left: 220px;
   }
@@ -890,9 +856,8 @@ textarea:placeholder-shown {
   .hide-small {
     display: block;
   }
-  
+
   .hide-big {
     display: none;
   }
 }
-

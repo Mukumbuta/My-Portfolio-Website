@@ -80,6 +80,17 @@ body {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .desktop-navbar .desktop-navbar-links {
+    display: flex;
+  }
+
+  .nav-email {
+    margin-top: 30px;
+  }
+
+}
+
 .desktop-navbar-links a {
   height: 20px;
   font-family: 'Inter', sans-serif;

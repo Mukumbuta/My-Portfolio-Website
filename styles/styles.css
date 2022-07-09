@@ -202,7 +202,7 @@ body {
   } 
 
   .text-container {
-    flex: 4.2;
+    flex: 5;
     order: 3;
   
   }
@@ -210,7 +210,7 @@ body {
   .primary-text .title {
     font-style: normal;
     font-weight: 400;
-    font-size: 72px;
+    font-size: 65px;
     line-height: 82px;
     color: #F55800;
   }
@@ -237,7 +237,7 @@ body {
     color: #F4F5F7;
   }
 
-  .media-icons {
+  .primary-icons {
     flex-direction: column;
     width: 44px;
     height: 230px;
@@ -375,6 +375,7 @@ body {
   margin-top: 12px;
   margin-left: 16px;
 }
+
 @media (min-width: 768px) {
   .my-projects-actual ul {
     margin-bottom: 44px;
@@ -402,6 +403,7 @@ body {
 .recent-break {
   display: none;
 }
+
 @media (min-width: 768px) {
   .my-projects-title {
     text-align: left;
@@ -476,6 +478,7 @@ body {
   margin-top: 132px;
   height: 2060px;
   margin-inline: -24px;
+  padding-left: 24px;
 }
 
 .text-button-wrapper {
@@ -705,6 +708,43 @@ textarea:placeholder-shown {
   border-radius: 10px;
 }
 
+/* Contact form for desktop version */
+
+@media (min-width: 768px) {
+  .contact-form-section {
+    display: flex;
+  }
+
+  .contact-form-text {
+    flex: 0.47;
+    text-align: left;
+    margin-left: 135px;
+  }
+
+  .contact-form {
+    flex: 1;
+    margin-top: 29px;
+    margin-bottom: 154px;
+  }
+
+  .full-name {
+    padding-bottom: 10px;
+  }
+
+  .button {
+    display: flex;
+    justify-content: left;
+    margin-top: -20px;
+  }
+  .bottom-line-cont {
+    display: none;
+  }
+}
+
+  
+
+
+
 /* working on project section for grid  */
 
 .new {
@@ -770,15 +810,16 @@ textarea:placeholder-shown {
   display: none;
 }
 
+/* About me section media queries */
 @media (min-width: 768px) {
-  
   .about-me {
     margin-top: -70px;
     padding-left: 142px;
+    height: 1328px;
   }
 
   .about-me-one {
-    border: thin solid white;
+    /* border: thin solid white; */
     display: flex;
     height: 566px;
     align-items: center;
@@ -789,7 +830,7 @@ textarea:placeholder-shown {
   }
 
   .about-me-image {
-    border: thin solid darkcyan;
+    /* border: thin solid darkcyan; */
     flex: 4;
   }
 
@@ -812,12 +853,11 @@ textarea:placeholder-shown {
   }
 
   .about-lang::before {
-
     left: 129px;
     top: 31%;
     transform: rotate(-45deg);
 
-}
+  }
 .skill-list-heading::before {
 
     content: '';
@@ -826,12 +866,11 @@ textarea:placeholder-shown {
     height: 18px;
     background: #ff6b00;
     position: absolute;
-
-}
+  }
 
  .skill-list-heading {
-  margin-left: -118px;
-}   
+    margin-left: -118px;
+  }   
 
   .about-frame::before {
     left: 112px;
@@ -855,5 +894,5 @@ textarea:placeholder-shown {
   .hide-big {
     display: none;
   }
-
 }
+

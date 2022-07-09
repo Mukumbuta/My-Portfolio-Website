@@ -891,3 +891,29 @@ textarea:placeholder-shown {
     display: none;
   }
 }
+
+/* add animations to the header */
+
+@keyframes lg-animation {
+  0% {
+    position: relative;
+    left: -200px;
+    @media (min-width: 768px) {
+      left: -288px;
+    }
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.animate-logo {
+  animation-name: lg-animation;
+  animation-timing-function: ease-in-out;
+  animation-duration: .5s;
+  animation-delay: none;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}

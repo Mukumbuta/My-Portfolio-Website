@@ -232,6 +232,15 @@ body {
     margin-right: 76px;
   }
 
+  /* Animations */
+  .media-icon:hover {
+    -webkit-transform: translate(3em, 0);
+    -moz-transform: translate(3em, 0);
+    -o-transform: translate(3em, 0);
+    -ms-transform: translate(3em, 0);
+    transform: translate(3em, 0);
+  }
+
   .primary-text-bg-image {
     position: static;
     flex-grow: 3;
@@ -239,6 +248,27 @@ body {
     background-image: url(../icons/Illustration-header.png);
     background-size: cover;
     height: 100%;
+  }
+
+  .primary-text-bg-image:hover {
+    transform: scale(1.5);
+  }
+
+  .skills li:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .multi-post-btn:hover {
+    background-color: #000e27;
+    color: #dbd8d7;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .multi-post-image-cont img:hover {
+    transform: scale(0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 }
 

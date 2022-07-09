@@ -80,6 +80,16 @@ body {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .desktop-navbar .desktop-navbar-links {
+    display: flex;
+  }
+
+  .nav-email {
+    margin-top: 30px;
+  }
+}
+
 .desktop-navbar-links a {
   height: 20px;
   font-family: 'Inter', sans-serif;
@@ -232,6 +242,15 @@ body {
     margin-right: 76px;
   }
 
+  /* Animations */
+  .media-icon:hover {
+    -webkit-transform: translate(3em, 0);
+    -moz-transform: translate(3em, 0);
+    -o-transform: translate(3em, 0);
+    -ms-transform: translate(3em, 0);
+    transform: translate(3em, 0);
+  }
+
   .primary-text-bg-image {
     position: static;
     flex-grow: 3;
@@ -239,6 +258,27 @@ body {
     background-image: url(../icons/Illustration-header.png);
     background-size: cover;
     height: 100%;
+  }
+
+  .primary-text-bg-image:hover {
+    transform: scale(1.5);
+  }
+
+  .skills li:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .multi-post-btn:hover {
+    background-color: #000e27;
+    color: #dbd8d7;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .multi-post-image-cont img:hover {
+    transform: scale(0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -860,4 +900,31 @@ textarea:placeholder-shown {
   .hide-big {
     display: none;
   }
+}
+
+/* add animations to the header */
+
+@keyframes lg-animation {
+  0% {
+    position: relative;
+    left: -200px;
+
+    @media (min-width: 768px) {
+      left: -288px;
+    }
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.animate-logo {
+  animation-name: lg-animation;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  animation-delay: none;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
 }

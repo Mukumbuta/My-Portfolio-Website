@@ -14,6 +14,10 @@
 To get a local copy up and running follow these simple example steps.
 
 
+## Deployment
+- Deployed using GitHub Pages
+- Link: https://mukumbuta.github.io/My-Portfolio-Website/
+
 ## Authors
 
 👤 **Author1**
@@ -35,9 +39,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Hat tip to @Kibirige-john 
+- GitHub: [@githubhandle](https://github.com/John-Kibirige)
+
 
 ## 📝 License
 

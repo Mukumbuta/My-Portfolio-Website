@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 html {
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -92,7 +92,7 @@ body {
 
 .desktop-navbar-links a {
   height: 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -213,7 +213,7 @@ body {
   }
 
   .primary-text .secondary-text {
-    font-family: 'Inter'sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
@@ -226,7 +226,7 @@ body {
   }
 
   .primary-text-description {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -294,7 +294,7 @@ body {
   font-weight: 400;
   line-height: 110px;
   color: #1c1a19;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   text-align: center;
   border-bottom: 1px solid #212121;
   margin-bottom: 80px;
@@ -317,7 +317,7 @@ body {
   display: flex;
   align-items: center;
   color: #091e42;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   margin-top: 24px;
 }
 
@@ -377,7 +377,7 @@ body {
 }
 
 .my-projects-actual h2 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -502,7 +502,7 @@ body {
 
 .about-me h2 {
   height: 79px;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -570,7 +570,7 @@ body {
 }
 
 .skill-list-heading::before {
-  content: '';
+  content: "";
   display: block;
   width: 18px;
   height: 18px;
@@ -602,7 +602,7 @@ body {
 .tech-li {
   list-style-type: none;
   margin-top: 22px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -616,7 +616,7 @@ body {
 /* Contact form */
 .contact-form-section p {
   height: 216px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -653,7 +653,7 @@ body {
   resize: vertical;
 }
 
-input[type='text']::placeholder {
+input[type="text"]::placeholder {
   margin-left: 24px;
 }
 
@@ -672,7 +672,7 @@ textarea {
 textarea,
 textarea:placeholder-shown {
   padding: 10px 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -865,7 +865,7 @@ textarea:placeholder-shown {
   }
 
   .skill-list-heading::before {
-    content: '';
+    content: "";
     display: block;
     width: 18px;
     height: 18px;

@@ -213,7 +213,7 @@ body {
   }
 
   .primary-text .secondary-text {
-    font-family: "Inter" sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;

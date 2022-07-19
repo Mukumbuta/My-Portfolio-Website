@@ -120,28 +120,21 @@ body {
   }
 
   .desktop-navbar-links .nav-links {
-    height: 20px;
     font-family: "Inter", sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
-    color: #fff;
     padding-right: 32px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #FFF5E1;
   }
 
   .actual-links  {
     padding: 1rem 0;
     border-bottom: 0.5px solid #6F6C6B;
   }
-
-  .links-helper {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFF5E1;
-  }
-  
   
 }
 

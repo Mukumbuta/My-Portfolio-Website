@@ -57,10 +57,95 @@ body {
   height: 16px;
 }
 
+.desktop-navbar-links.active {
+  display: flex;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  flex-direction: column;
+  background: #3c3a39;
+  mix-blend-mode: normal;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  text-align: left;
+  height: 100vh;
+  width: 100%;
+  padding: 3.25rem 2.4rem 0 2.4rem;
+  gap: 0.6rem;
+  transition: 0.3s;
+}
+
+.nav-email {
+  display: block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.desktop-navbar-links.active .nav-email {
+  display: none;
+}
+
+.toolbar.active {
+  z-index: 10;
+}
+
+.scroll-disable {
+  overflow: hidden;
+}
+
+.actual-links:not(:last-of-type) {
+  margin-right: 32px;
+}
+
+@media (max-width: 768px) {
+  /* Turning the humburger menu to an X */
+  .toolbar.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toolbar.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .toolbar.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* Positioning the menu on humburger click */
+  .desktop-navbar {
+    position: relative;
+  }
+
+  .desktop-navbar-links {
+    display: none;
+    list-style: none;
+  }
+
+  .desktop-navbar-links .nav-links {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    padding-right: 32px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+
+    /* display: flex; */
+    align-items: center;
+    color: #fff5e1;
+  }
+
+  .actual-links {
+    padding: 1rem 0;
+    border-bottom: 0.5px solid #6f6c6b;
+  }
+}
+
 /* Media queries */
 @media only screen and (min-width: 768px) {
   .desktop-navbar .desktop-navbar-links {
     display: flex;
+    list-style: none;
     align-items: center;
   }
 
@@ -69,36 +154,19 @@ body {
   }
 }
 
-.desktop-navbar-links {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  list-style-type: none;
-  gap: 10px;
-}
-
-.desktop-navbar .desktop-navbar-links {
-  display: none;
-}
-
 @media (min-width: 768px) {
   .desktop-navbar .desktop-navbar-links {
     display: flex;
+    align-items: center;
   }
 
-  .nav-email {
-    margin-top: 30px;
+  .nav-links {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
   }
-}
-
-.desktop-navbar-links a {
-  height: 20px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  color: #fff;
-  padding-right: 32px;
 }
 
 .desktop-navbar-links a:link {
@@ -181,7 +249,7 @@ body {
 .primary-text-bg-image {
   width: 230px;
   height: 276px;
-  background-image: url(../icons/backgroundimg.svg);
+  background-image: url(../images/backgroundimg.svg);
   background-repeat: no-repeat;
   background-position: -11px 55%;
   background-size: 345px 350px;
@@ -255,13 +323,9 @@ body {
     position: static;
     flex-grow: 3;
     order: 3;
-    background-image: url(../icons/Illustration-header.png);
+    background-image: url(../images/Illustration-header.png);
     background-size: cover;
     height: 100%;
-  }
-
-  .primary-text-bg-image:hover {
-    transform: scale(1.5);
   }
 
   .skills li:hover {
@@ -370,7 +434,7 @@ body {
 .my-projects-actual {
   color: #fff;
   padding-top: 84px;
-  background-image: url(../icons/projectsbackground.svg);
+  background-image: url(../images/projectsbackground.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: center;
@@ -775,7 +839,7 @@ textarea:placeholder-shown {
   }
 
   .no-overlay {
-    background-image: url(../icons/profesional-clear.png);
+    background-image: url(../images/profesional-clear.png);
     background-position-y: -26%;
   }
 
@@ -792,7 +856,7 @@ textarea:placeholder-shown {
   }
 
   .actual-two {
-    background-image: url(../icons/data-dashboard.png);
+    background-image: url(../images/data-dashboard.png);
   }
 
   .disappear {
@@ -812,7 +876,7 @@ textarea:placeholder-shown {
   }
 
   .actual-three {
-    background-image: url(../icons/web-portfolio.png);
+    background-image: url(../images/web-portfolio.png);
   }
 }
 

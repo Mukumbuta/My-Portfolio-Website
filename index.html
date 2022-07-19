@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Porfolio</title>
     <!-- font links -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./styles/styles.css" />
+    
   </head>
   <body>
     <!-- Header section -->
@@ -26,30 +23,30 @@
       <nav class="desktop-navbar">
         <ul class="desktop-navbar-links">
           <li class="actual-links">
-            <a href=""> Portfolio </a>
+            <a class="nav-links" href="#portfolio"> Portfolio </a>
           </li>
           <li class="actual-links">
-            <a href=""> About </a>
+            <a class="nav-links" href="#about"> About </a>
           </li>
           <li class="actual-links">
-            <a href=""> Contact </a>
+            <a class="nav-links" href="#contact"> Contact </a>
           </li>
           <li>
-            <a href="">
+            <a href="#contact">
               <img
                 class="nav-email"
-                src="./icons/email-icon.svg"
+                src="./images/email-icon.svg"
                 alt="email icon"
               />
             </a>
           </li>
         </ul>
       </nav>
-      <nav class="toolbar">
+      <div class="toolbar">
         <div class="menubar1 bar"></div>
         <div class="menubar2 bar"></div>
         <div class="menubar3 bar"></div>
-      </nav>
+      </div>
     </header>
 
     <!-- primary text section -->
@@ -193,7 +190,7 @@
 
     <!-- My projects section  -->
 
-    <section class="my-projects">
+    <section id="portfolio" class="my-projects">
       <!-- title -->
       <div class="recent-cont">
         <h1 class="my-projects-title">My Recent Works</h1>
@@ -205,7 +202,7 @@
 
       <article class="my-projects-multi-post">
         <div class="multi-post-image-cont">
-          <img src="./icons/project_img.png" alt="fitness picture" />
+          <img src="./images/project_img.png" alt="fitness picture" />
         </div>
 
         <div class="multi-post-txt-btn">
@@ -375,7 +372,7 @@
     <!-- End of all actual projects -->
 
     <!-- beginning of about me -->
-    <section class="about-me">
+    <section id="about" class="about-me">
       <div class="about-me-one">
         <div class="text-button-wrapper">
           <h2>About me</h2>
@@ -393,11 +390,11 @@
         <div class="about-me-image">
           <img
             class="actual-about-me-img hide-small"
-            src="./icons/Frame.png"
+            src="./images/Frame.png"
             alt="frame image "
           />
           <img
-            src="./icons/abackground.svg"
+            src="./images/abackground.svg"
             alt="An image showing a racing flag"
             class="actual-about-me-img hide-big"
           />
@@ -442,7 +439,7 @@
     </section>
     <!-- end of about section -->
 
-    <section class="contact-form-section">
+    <section id="contact" class="contact-form-section">
       <p class="contact-form-text">
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
@@ -625,5 +622,7 @@
     <div class="bottom-line-cont">
       <div class="bottom-line"></div>
     </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

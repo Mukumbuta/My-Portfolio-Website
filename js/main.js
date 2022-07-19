@@ -10,4 +10,5 @@ menu_bar.addEventListener("click", () => {
     console.log("Menu Bar Clicked !!!");
     menu_bar.classList.toggle("active");
     menu_items.classList.toggle("active");
+    document.documentElement.classList.toggle('scroll-disable');
 });

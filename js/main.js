@@ -1,7 +1,7 @@
-const menuBar= document.querySelector('.toolbar');
+const menuBar = document.querySelector('.toolbar');
 const menuItems = document.querySelector('.desktop-navbar-links');
 
-menu_bar.addEventListener('click', () => {
+menuBar.addEventListener('click', () => {
   menuBar.classList.toggle('active');
   menuItems.classList.toggle('active');
   document.documentElement.classList.toggle('scroll-disable');

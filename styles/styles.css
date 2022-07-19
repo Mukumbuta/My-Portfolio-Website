@@ -57,6 +57,48 @@ body {
   height: 16px;
 }
 
+@media (max-width:768px){
+  
+/* Turning the humburger menu to an X */
+  .toolbar.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .toolbar.active .bar:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .toolbar.active .bar:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* Positioning the menu on humburger click*/
+  .desktop-navbar {
+    position: relative;
+  }
+  
+  .desktop-navbar-links {
+    position: fixed;
+    left: -100px;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #1c1a19;
+    width: 100%;
+    text-align: left;
+    transition: 0.3s;
+  }
+
+  .actual-links {
+    margin: 16px 0;
+  }
+
+  .desktop-navbar-links.active {
+    left: 0;
+  }
+
+}
+
 /* Media queries */
 @media only screen and (min-width: 768px) {
   .desktop-navbar .desktop-navbar-links {

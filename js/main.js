@@ -11,4 +11,5 @@ menuBar.addEventListener('click', () => {
 document.querySelectorAll('.nav-links').forEach((link) => link.addEventListener('click', () => {
   menuBar.classList.remove('active');
   menuItems.classList.remove('active');
+  document.documentElement.classList.toggle('scroll-disable');
 }));

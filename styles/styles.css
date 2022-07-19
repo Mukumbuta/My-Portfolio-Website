@@ -77,12 +77,8 @@ body {
   display: block;
   width: 24px;
   height: 24px;
+  margin-top: 25px;
   vertical-align: middle;
-}
-
-.actual-links {
-  padding: 1rem 0;
-  border-bottom: 1px solid rgb(223, 225, 230);
 }
 
 .desktop-navbar-links.active .nav-email {
@@ -121,6 +117,11 @@ body {
     display: none;
     list-style: none;
   }
+
+  .actual-links {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(223, 225, 230);
+  }
 }
 
 /* Media queries */
@@ -135,14 +136,6 @@ body {
     display: none;
   }
 }
-
-/* .desktop-navbar-links {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  list-style-type: none;
-  gap: 10px;
-} */
-
 
 @media (min-width: 768px) {
   .desktop-navbar .desktop-navbar-links {
@@ -241,7 +234,7 @@ body {
 .primary-text-bg-image {
   width: 230px;
   height: 276px;
-  background-image: url(../icons/backgroundimg.svg);
+  background-image: url(../images/backgroundimg.svg);
   background-repeat: no-repeat;
   background-position: -11px 55%;
   background-size: 345px 350px;
@@ -315,13 +308,9 @@ body {
     position: static;
     flex-grow: 3;
     order: 3;
-    background-image: url(../icons/Illustration-header.png);
+    background-image: url(../images/Illustration-header.png);
     background-size: cover;
     height: 100%;
-  }
-
-  .primary-text-bg-image:hover {
-    transform: scale(1.5);
   }
 
   .skills li:hover {
@@ -430,7 +419,7 @@ body {
 .my-projects-actual {
   color: #fff;
   padding-top: 84px;
-  background-image: url(../icons/projectsbackground.svg);
+  background-image: url(../images/projectsbackground.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: center;
@@ -835,7 +824,7 @@ textarea:placeholder-shown {
   }
 
   .no-overlay {
-    background-image: url(../icons/profesional-clear.png);
+    background-image: url(../images/profesional-clear.png);
     background-position-y: -26%;
   }
 
@@ -852,7 +841,7 @@ textarea:placeholder-shown {
   }
 
   .actual-two {
-    background-image: url(../icons/data-dashboard.png);
+    background-image: url(../images/data-dashboard.png);
   }
 
   .disappear {
@@ -872,7 +861,7 @@ textarea:placeholder-shown {
   }
 
   .actual-three {
-    background-image: url(../icons/web-portfolio.png);
+    background-image: url(../images/web-portfolio.png);
   }
 }
 

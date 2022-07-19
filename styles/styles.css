@@ -78,15 +78,8 @@ body {
   }
   
   .desktop-navbar-links {
-    position: fixed;
-    left: -100px;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: #1c1a19;
-    width: 100%;
-    text-align: left;
-    transition: 0.3s;
+    display: none;
+    list-style: none;
   }
 
   .actual-links {
@@ -94,7 +87,19 @@ body {
   }
 
   .desktop-navbar-links.active {
-    left: 0;
+    display: flex;
+    background: red;
+    position: fixed;
+    flex-direction: column;
+    background-color: #1c1a19;
+    width: 100%;
+    text-align: left;
+    transition: 0.3s;
+  }
+
+  .nav-email {
+    display: block;
+    vertical-align: middle;
   }
 
 }
@@ -103,6 +108,7 @@ body {
 @media only screen and (min-width: 768px) {
   .desktop-navbar .desktop-navbar-links {
     display: flex;
+    list-style: none;
     align-items: center;
   }
 
@@ -111,24 +117,17 @@ body {
   }
 }
 
-.desktop-navbar-links {
+/* .desktop-navbar-links {
   display: grid;
   grid-template-columns: auto auto auto;
   list-style-type: none;
   gap: 10px;
-}
+} */
 
-.desktop-navbar .desktop-navbar-links {
-  display: none;
-}
 
 @media (min-width: 768px) {
   .desktop-navbar .desktop-navbar-links {
     display: flex;
-  }
-
-  .nav-email {
-    margin-top: 30px;
   }
 }
 

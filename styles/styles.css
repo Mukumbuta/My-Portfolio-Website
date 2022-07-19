@@ -61,7 +61,7 @@ body {
   display: flex;
   position: fixed;
   z-index: 5;
-  left:0;
+  left: 0;
   top: 0;
   flex-direction: column;
   background-color: #1c1a19;
@@ -93,26 +93,25 @@ body {
   overflow: hidden;
 }
 
-@media (max-width:768px){
-  
-/* Turning the humburger menu to an X */
-  .toolbar.active .bar:nth-child(2){
+@media (max-width: 768px) {
+  /* Turning the humburger menu to an X */
+  .toolbar.active .bar:nth-child(2) {
     opacity: 0;
   }
 
-  .toolbar.active .bar:nth-child(1){
+  .toolbar.active .bar:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
   }
 
-  .toolbar.active .bar:nth-child(3){
+  .toolbar.active .bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
   }
 
-  /* Positioning the menu on humburger click*/
+  /* Positioning the menu on humburger click */
   .desktop-navbar {
     position: relative;
   }
-  
+
   .desktop-navbar-links {
     display: none;
     list-style: none;

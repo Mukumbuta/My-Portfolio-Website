@@ -5,6 +5,7 @@
 
 html {
   box-sizing: border-box;
+  min-height: 100%;
 }
 
 *,
@@ -23,6 +24,9 @@ body {
   line-height: 24px;
   color: #fff;
   min-width: 375px;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 /* header styles */
@@ -246,30 +250,29 @@ body {
   list-style-type: none;
 }
 
-.primary-text-bg-image {
-  width: 230px;
-  height: 276px;
+.primary-text {
+  width: 100%;
   background-image: url(../images/backgroundimg.svg);
   background-repeat: no-repeat;
-  background-position: -11px 55%;
-  background-size: 345px 350px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  background-repeat: no-repeat;
+  background-position: right -11rem bottom -4rem;
+  background-size: 25rem 25rem;
+  height: 100%;
 }
 
 @media (min-width: 768px) {
   .primary-text {
-    padding: 0;
     display: flex;
-    height: 798px;
     align-items: center;
-    padding-left: 32px;
+    background-position: right -27rem top -4rem;
+    background-size: 100% 100%;
+    padding: 0 0 0 32px;
+    height: 100%;
   }
 
-  .text-container {
-    flex: 5;
-    order: 3;
+  .primary-text .text-container {
+    width: 48%;
+    padding-left: 5rem;
   }
 
   .primary-text .title {
@@ -303,9 +306,11 @@ body {
   }
 
   .primary-icons {
+    position: absolute;
     flex-direction: column;
-    width: 44px;
-    height: 230px;
+    gap: 1.25rem;
+    width: max-content;
+    height: max-content;
     order: 1;
     margin-right: 76px;
   }
@@ -555,18 +560,17 @@ body {
 /* About section */
 .about-me {
   background: black;
-  margin-top: 132px;
-  height: 2060px;
-  margin-inline: -24px;
-  padding-left: 24px;
+  background-image: url('./../images/abackground.svg');
+  background-repeat: no-repeat;
+  background-position: top 27% right;
+  padding: 16px 24px 16px 24px;
 }
 
 .text-button-wrapper {
-  padding: 120px 24px 0;
+  padding: 120px 24px 0 24px;
 }
 
 .about-me h2 {
-  height: 79px;
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
@@ -605,15 +609,14 @@ body {
 }
 
 .about-me-seperator {
-  top: calc(50% - 0px / 2 + 0.5px);
+  margin-top: 15rem;
   border: 1px solid #fff;
-  width: 90%;
-  margin-left: 24px;
-  margin-top: 22.69px;
-}
+ }
 
 .technologies-main-cont {
   display: flex;
+  width: 80%;
+  margin: auto;
   justify-content: center;
   align-items: center;
 }
@@ -792,6 +795,11 @@ textarea:placeholder-shown {
   border-radius: 10px;
 }
 
+
+.modal-container {
+
+}
+
 /* Contact form for desktop version */
 
 @media (min-width: 768px) {
@@ -892,20 +900,29 @@ textarea:placeholder-shown {
 /* About me section media queries */
 @media (min-width: 768px) {
   .about-me {
-    margin-top: -70px;
-    padding-left: 142px;
-    height: 1328px;
+    background-image: url('./../images/Frame.png');
+    background-repeat: no-repeat;
+    background-position: top 5% right;
   }
 
+  .about-me-seperator {
+    width: 85%;
+    margin: auto;
+    margin-top: 5rem;
+    border: 1px solid #fff;
+   }
+  
+
   .about-me-one {
-    /* border: thin solid white; */
     display: flex;
-    height: 566px;
+    padding-bottom: rem;
     align-items: center;
+    padding-left: 142px;
+
   }
 
   .text-button-wrapper {
-    flex: 3;
+    width: 48%;
   }
 
   .about-me-image {
@@ -914,10 +931,6 @@ textarea:placeholder-shown {
   }
 
   .actual-about-me-img {
-    margin-top: 0;
-  }
-
-  .about-me-seperator {
     margin-top: 0;
   }
 
@@ -1003,19 +1016,12 @@ textarea:placeholder-shown {
 /* Mobile version */
 @media (max-width: 768px) {
   .modal-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-    gap: 24px;
-    position: absolute;
-    height: 718px;
-    top: 16px;
-    left: 0;
-    left: calc(50% - 80% / 2);
-    z-index: 10;
+    width: 90%;
+    max-width: max-content;
+    height: 85%;
+    max-height: max-content;
+    overflow: auto;
     background: #fff;
-    width: 80%;
   }
 
   /* .modal-container.active (
@@ -1049,20 +1055,24 @@ textarea:placeholder-shown {
     bottom: 25%;
   }
 
-  #modal-overlay {
-    position: absolute;
-
-    /* opacity: 0; */
+  .modal-overlay {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(207, 195, 195, 0.5);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    z-index: 5;
   }
 
-  #modal-overlay.active {
+  .modal-overlay.active {
     opacity: 1;
-    pointer-events: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .modal-skills-list {
@@ -1177,19 +1187,30 @@ textarea:placeholder-shown {
 
 /* Desktop version */
 @media (min-width: 768px) {
-  .modal-container {
-    width: 90%;
-    height: 631px;
-    padding-top: 24px;
-    padding-left: 24;
-    padding-right: 70px;
+  .modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
-    top: 0;
     bottom: 0;
-    background: #fff;
-    border: 1px solid #ebecf0;
-    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    z-index: 5;
+  }
+
+  .modal-container {
+    width: 90%;
+    max-width: max-content;
+    height: 85%;
+    max-height: max-content;
+    overflow: hidden;
+    margin: auto;
+    background-color: white;
   }
 
   .modal-header {

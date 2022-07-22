@@ -14,6 +14,12 @@ document.querySelectorAll('.nav-links').forEach((link) => link.addEventListener(
   document.documentElement.classList.toggle('scroll-disable');
 }));
 
+const ConvertStringToHTML = (str) => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(str, 'text/html');
+    return doc.body;
+  };
+
 // ------------------Rendering the Project section from javascript to html ----------------------/
 
 // The first part of the section which is multi-post
@@ -166,19 +172,13 @@ const projects = `<div class="all-actual-projects">
 
 // render the entire html when the page has loaded
 window.addEventListener('load', () => {
-  const portfolioSection = `
-    <section id="portfolio" class="my-projects">
-      <div class="recent-cont">
-        <h1 class="my-projects-title">My Recent Works</h1>
-        <hr class="recent-break" />
-      </div>
-        ${multiPost}
-        ${projects}
-    </section>`;
+  const portfolioSection = document.querySelector('.my-projects');
 
+  portfolioSection.appendChild(...ConvertStringToHTML(multiPost).children);
+  portfolioSection.appendChild(...ConvertStringToHTML(projects).children);
   const entireProjectsContainer = document.createElement('div');
-  entireProjectsContainer.classList.add('entire-projects-cont');
-  entireProjectsContainer.innerHTML = portfolioSection;
+//   entireProjectsContainer.classList.add('entire-projects-cont');
+//   entireProjectsContainer.innerHTML = portfolioSection;
 
   // insert entire project container in the right place inside the body
   const { body } = document;

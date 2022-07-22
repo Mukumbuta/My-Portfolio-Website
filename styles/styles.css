@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html {
   box-sizing: border-box;
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -43,7 +43,7 @@ body {
 }
 
 .mylogo-text {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -123,7 +123,7 @@ body {
   }
 
   .desktop-navbar-links .nav-links {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     padding-right: 32px;
     font-weight: 700;
@@ -197,7 +197,7 @@ body {
 }
 
 .primary-text .title {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 50px;
@@ -207,7 +207,7 @@ body {
 }
 
 .primary-text .secondary-text {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -220,7 +220,7 @@ body {
 }
 
 .primary-text-description {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -281,7 +281,7 @@ body {
   }
 
   .primary-text .secondary-text {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
@@ -294,7 +294,7 @@ body {
   }
 
   .primary-text-description {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -333,13 +333,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
-  .multi-post-btn:hover {
-    background-color: #000e27;
-    color: #dbd8d7;
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-
   .multi-post-image-cont img:hover {
     transform: scale(0.8);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -358,7 +351,7 @@ body {
   font-weight: 400;
   line-height: 110px;
   color: #1c1a19;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   text-align: center;
   border-bottom: 1px solid #212121;
   margin-bottom: 80px;
@@ -381,7 +374,7 @@ body {
   display: flex;
   align-items: center;
   color: #091e42;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   margin-top: 24px;
 }
 
@@ -431,6 +424,13 @@ body {
   margin-top: 22px;
 }
 
+.multi-post-btn:hover {
+  background-color: #000e27;
+  color: #dbd8d7;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .my-projects-actual {
   color: #fff;
   padding-top: 84px;
@@ -441,7 +441,7 @@ body {
 }
 
 .my-projects-actual h2 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -521,6 +521,7 @@ body {
     height: 448px;
     gap: 24px;
     margin-bottom: 24px;
+    margin-top: 50px;
   }
 
   .multi-post-image-cont {
@@ -566,7 +567,7 @@ body {
 
 .about-me h2 {
   height: 79px;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -587,6 +588,10 @@ body {
 .my-cv-btn {
   margin-top: 24px;
   padding-inline: 24px;
+}
+
+.my-cv-btn:hover {
+  border: thin solid;
 }
 
 .about-me-image {
@@ -634,7 +639,7 @@ body {
 }
 
 .skill-list-heading::before {
-  content: "";
+  content: '';
   display: block;
   width: 18px;
   height: 18px;
@@ -666,7 +671,7 @@ body {
 .tech-li {
   list-style-type: none;
   margin-top: 22px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -680,7 +685,7 @@ body {
 /* Contact form */
 .contact-form-section p {
   height: 216px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -717,7 +722,7 @@ body {
   resize: vertical;
 }
 
-input[type="text"]::placeholder {
+input[type='text']::placeholder {
   margin-left: 24px;
 }
 
@@ -736,7 +741,7 @@ textarea {
 textarea,
 textarea:placeholder-shown {
   padding: 10px 20px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -838,7 +843,7 @@ textarea:placeholder-shown {
     display: none;
   }
 
-  .no-overlay {
+  .all-actual-projects .my-projects-actual:first-of-type {
     background-image: url(../images/profesional-clear.png);
     background-position-y: -26%;
   }
@@ -929,7 +934,7 @@ textarea:placeholder-shown {
   }
 
   .skill-list-heading::before {
-    content: "";
+    content: '';
     display: block;
     width: 18px;
     height: 18px;
@@ -993,10 +998,10 @@ textarea:placeholder-shown {
   animation-play-state: running;
 }
 
-
 /* Styles for the Modal popUp */
+
 /* Mobile version */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .modal-container {
     display: flex;
     flex-direction: column;
@@ -1007,9 +1012,9 @@ textarea:placeholder-shown {
     height: 718px;
     top: 16px;
     left: 0;
-    left: calc(50% - 80%/2);
+    left: calc(50% - 80% / 2);
     z-index: 10;
-    background: #ffffff;
+    background: #fff;
     width: 80%;
   }
 
@@ -1021,13 +1026,13 @@ textarea:placeholder-shown {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #172B4D;
+    color: #172b4d;
     width: 311px;
     height: 82px;
   }
 
   .modal-header h1 {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -1036,8 +1041,8 @@ textarea:placeholder-shown {
   }
 
   .modal-header .cross-btn {
-    Width: 13px;
-    Height: 13px;
+    width: 13px;
+    height: 13px;
     left: 25%;
     right: 25%;
     top: 25%;
@@ -1046,6 +1051,7 @@ textarea:placeholder-shown {
 
   #modal-overlay {
     position: absolute;
+
     /* opacity: 0; */
     top: 0;
     left: 0;
@@ -1076,12 +1082,12 @@ textarea:placeholder-shown {
     text-decoration: none;
     width: 66px;
     height: 16px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
-    color: #3C3A39;
+    color: #3c3a39;
   }
 
   .techOne {
@@ -1123,12 +1129,12 @@ textarea:placeholder-shown {
   .modal-image img {
     width: 100%;
     height: 500px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .modal-description {
     margin-top: -110px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -1147,7 +1153,7 @@ textarea:placeholder-shown {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    left: 0px;
+    left: 0;
     top: 4px;
     padding: 12px;
     gap: 12px;
@@ -1168,7 +1174,7 @@ textarea:placeholder-shown {
     height: 50px;
   }
 }
- 
+
 /* Desktop version */
 @media (min-width: 768px) {
   .modal-container {
@@ -1177,13 +1183,13 @@ textarea:placeholder-shown {
     padding-top: 24px;
     padding-left: 24;
     padding-right: 70px;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    background: #FFFFFF;
-    border: 1px solid #EBECF0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   }
 
   .modal-header {
@@ -1198,7 +1204,6 @@ textarea:placeholder-shown {
 
   .project-contents {
     display: flex;
-
   }
 
   .modal-skills {
@@ -1221,7 +1226,7 @@ textarea:placeholder-shown {
   .modal-skills .techOne a {
     list-style: none;
     text-decoration: none;
-    color: #3C3A39;
+    color: #3c3a39;
   }
 
   /* .modal-image img {
@@ -1238,5 +1243,4 @@ textarea:placeholder-shown {
     display: flex;
     gap: 5px;
   }
-
 }

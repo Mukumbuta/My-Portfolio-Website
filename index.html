@@ -11,7 +11,45 @@
     
   </head>
   <body>
-    <!-- Header section -->
+
+    <!-- Modal PopUp -->
+    <div id="modal" class="modal-container">
+      <div class="modal-header">
+        <h1>Multi-Post Stories</h1>
+          <img class="cross-btn" src="images/modal-images/cross-icon.svg" alt="">
+      </div>
+      <div class="modal-project-container">
+        <div class="modal-skills-list">
+          <ul class="modal-skills">
+            <li class="techOne htmll">
+              <a href="#">html</a>
+            </li>
+            <li class="techOne bootstrap">
+              <a href="#">Bootstrap</a>
+            </li>
+            <li class="techOne rails">
+              <a href="#">Ruby on rails</a>
+            </li>
+          </ul>
+        </div>
+        <div class="project-contents">
+          <div class="modal-image">
+            <img src="images/modal-images/Snapshoot Portfolio.svg" alt="Image of my first project">
+          </div>
+          <div class="modal-description">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the inustry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of the type and scrambled it to make a type specimen book. 
+              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+            </p>
+            <div class="modal-buttons">
+              <button class="mb-1 modal-btn multi-post-btn">See Project <a href=""><img class="redirect-icon" src="images/modal-images/see-live-project.svg" alt=""></a></button>
+              <button class="mb-2 modal-btn multi-post-btn">See Source <a href=""><img class="redirect-icon" src="images/modal-images/github-source.svg" alt=""></a></button>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div id="modal-overlay"></div>
     <header class="navbar">
       <div class="mylogo">
         <a
@@ -23,7 +61,7 @@
       <nav class="desktop-navbar">
         <ul class="desktop-navbar-links">
           <li class="actual-links">
-            <a class="nav-links" href="#portfolio"> Portfolio </a>
+            <a class="nav-links" href="#projects"> Portfolio </a>
           </li>
           <li class="actual-links">
             <a class="nav-links" href="#about"> About </a>
@@ -244,10 +282,7 @@
             </ul>
           </div>
 
-          <button
-            type="button"
-            class="my-projects-actual-btn multi-post-btn myp-one-shown"
-          >
+          <button type="button" data-modal-target="#modal" class="my-projects-actual-btn multi-post-btn myp-one-shown">
             See Project
           </button>
         </article>
@@ -289,10 +324,7 @@
             <li class="ruby1">Ruby</li>
           </ul>
 
-          <button
-            type="button"
-            class="my-projects-actual-btn multi-post-btn disappear"
-          >
+          <button type="button" class="my-projects-actual-btn multi-post-btn disappear">
             See Project
           </button>
         </article>

@@ -185,30 +185,83 @@ window.addEventListener('load', () => {
   body.insertBefore(entireProjectsContainer, body.children[2]);
 });
 
-//   // Modal PopUp
-// const openModalBtn = document.querySelectprAll('[data-modal-target]');
-// const closeModalBtn = document.querySelectorAll('[data-close-btn]');
-// const overlay = document.getElementById('modal-overlay');
+// Display Modal PopUp
+// Modal data
+const modalData = [
+  {
+    name: 'Multi-Post Stories',
+    technologies: ['css', 'html', 'Booststrap', 'Ruby'],
+    image: {
+      imageSrc: 'images/project_img.png',
+    },
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    Link: 'https://Mukumbuta.github.io/My-Porfolio-Website/',
+    projectRepo: 'https://github.com/Mukumbuta/My-Porfolio-Website',
+  },
+  {
+    name: 'Profesional Art Printing Data',
+    technologies: ['html', 'Booststrap', 'Ruby'],
+    image: {
+      imageSrc: 'images/project_img.png',
+    },
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    Link: 'https://Mukumbuta.github.io/My-Porfolio-Website/',
+    projectRepo: 'https://github.com/Mukumbuta/My-Porfolio-Website',
+  },
+  {
+    name: 'Data Dashboard Healthcare',
+    technologies: ['html', 'Booststrap', 'Ruby'],
+    image: {
+      imageSrc: 'images/project_img.png',
+    },
+    description: 'A daily selection of privately personalized reads;no accounts or sign-ups required. has been the industrys standard',
+    Link: 'https://Mukumbuta.github.io/My-Porfolio-Website/',
+    projectRepo: 'https://github.com/Mukumbuta/My-Porfolio-Website',
+  },
+  {
+    name: 'Website Protfolio',
+    technologies: ['html', 'Booststrap', 'Ruby'],
+    image: {
+      imageSrc: 'images/project_img.png',
+    },
+    description: 'A daily selection of privately personalized reads;no accounts or sign-ups required. has been the industrys standard',
+    Link: 'https://Mukumbuta.github.io/My-Porfolio-Website/',
+    projectRepo: 'https://github.com/Mukumbuta/My-Porfolio-Website',
+  },
+  {
+    name: 'Profesional Art Printing Data',
+    technologies: ['html', 'Booststrap', 'Ruby'],
+    image: {
+      imageSrc: 'images/project_img.png',
+    },
+    description: 'A daily selection of privately personalized reads;no accounts or sign-ups required. has been the industrys standard',
+    Link: 'https://Mukumbuta.github.io/My-Porfolio-Website/',
+    projectRepo: 'https://github.com/Mukumbuta/My-Porfolio-Website',
+  },
+  {
+    name: 'Data Dashboard Healthcare',
+    technologies: ['html', 'Booststrap', 'Ruby'],
+    image: {
+      imageSrc: 'images/project_img.png',
+    },
+    description: 'A daily selection of privately personalized reads;no accounts or sign-ups required. has been the industrys standard',
+    Link: 'https://Mukumbuta.github.io/My-Porfolio-Website/',
+    projectRepo: 'https://github.com/Mukumbuta/My-Porfolio-Website',
+  },
+  {
+    name: 'Website Protfolio',
+    technologies: ['html', 'Booststrap', 'Ruby'],
+    img: {
+      imageSrc: 'images/project_img.png',
+    },
+    description: 'A daily selection of privately personalized reads;no accounts or sign-ups required. has been the industrys standard',
+    Link: 'https://Mukumbuta.github.io/My-Porfolio-Website/',
+    projectRepo: 'https://github.com/Mukumbuta/My-Porfolio-Website',
+  },
+];
 
-// // Open Modal
-// openModalBtn.forEach((button) => {
-//   button.addEventListener('click', () => {
-//     const modal = document.querySelector(button.dataset.modaltarget);
-//     showModal(modal);
-//   });
-// })
 
-// function showModal(modal) {
-//   modal.classList.add('active');
-//   overlay.classList.add('active');
-// }
+const body = document.querySelector('body');
+const modalContainer = document.createElement('div');
+const secondModalContainer = document.createElement('div');
 
-// // Close Modal
-// closeModalBtn.forEach((button) => {
-//   const modal = button.closest('.modal-container');
-//   closeModal(modal);
-// })
-// function closeModal(modal) {
-//   modal.classList.remove('active');
-//   overlay.classList.remove('active');
-// }

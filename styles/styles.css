@@ -1150,3 +1150,12 @@ textarea:placeholder-shown {
   top: 0;
   bottom: -10000%;
 }
+
+/* adding styles for the error message */
+.error-message {
+  display: block;
+  color: red;
+  text-align: left;
+  margin-top: 78px;
+  font-size: 14px;
+}

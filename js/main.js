@@ -8,13 +8,11 @@ menuBar.addEventListener('click', () => {
 });
 
 // Close menu on menu-item click
-document.querySelectorAll('.nav-links').forEach((link) =>
-  link.addEventListener('click', () => {
-    menuBar.classList.remove('active');
-    menuItems.classList.remove('active');
-    document.documentElement.classList.toggle('scroll-disable');
-  })
-);
+document.querySelectorAll('.nav-links').forEach((link) => link.addEventListener('click', () => {
+  menuBar.classList.remove('active');
+  menuItems.classList.remove('active');
+  document.documentElement.classList.toggle('scroll-disable');
+}));
 
 const ConvertStringToHTML = (str) => {
   const parser = new DOMParser();
@@ -146,19 +144,19 @@ const projectData = [
 // looping through all these using a skeleton made up of mainly string literals
 const projects = `<div class="all-actual-projects">
     ${projectData
-      .map(
-        (project, index) => `
+    .map(
+      (project, index) => `
        <article class="my-projects-actual">
           <div class=${index === 0 ? 'myp-one' : ''}>
             <h2 class="${index === 3 ? 'adj-actual-h2' : 'old '}">${
-          project.oldTitle
-        }</h2>
+  project.oldTitle
+}</h2>
             <h2 class="new adj-actual-h2 ${
-              index === 2 || index === 5 ? 'adj-actual-h3' : ''
-            }
+  index === 2 || index === 5 ? 'adj-actual-h3' : ''
+}
               ${index === 4 ? 'adj-actual-h2-1' : ''} ${
-          index === 3 ? 'disappear' : ''
-        }">${project.newTitle}
+  index === 3 ? 'disappear' : ''
+}">${project.newTitle}
               
               </h2>
             <p>${project.description}</p>
@@ -173,24 +171,22 @@ const projects = `<div class="all-actual-projects">
           <button
             type="button"
             class="my-projects-actual-btn multi-post-btn ${
-              index === 0 ? 'myp-one-shown' : 'disappear'
-            } show-popup"
+  index === 0 ? 'myp-one-shown' : 'disappear'
+} show-popup"
           >
             ${project.button}
           </button>
        </article>
-      `
-      )
-      .join('')}
+      `,
+    )
+    .join('')}
   </div>`;
 
 // Display Modal PopUp
 
-const descriptionMobile =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the inustry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of the type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
+const descriptionMobile = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the inustry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of the type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
 
-const descriptionDesktop =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.";
+const descriptionDesktop = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.";
 
 // template for the popup object
 function generatePopup() {

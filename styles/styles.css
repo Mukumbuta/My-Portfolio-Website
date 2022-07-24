@@ -198,6 +198,12 @@ body {
   background-color: #1c1a19;
   padding: 120px 24px 130px;
   position: relative;
+  width: 100%;
+  background-image: url(../images/backgroundimg.svg);
+  background-repeat: no-repeat;
+  background-position: right -11rem bottom -4rem;
+  background-size: 25rem 25rem;
+  height: 100%;
 }
 
 .primary-text .title {
@@ -248,16 +254,6 @@ body {
 
 .media-icon {
   list-style-type: none;
-}
-
-.primary-text {
-  width: 100%;
-  background-image: url(../images/backgroundimg.svg);
-  background-repeat: no-repeat;
-  background-repeat: no-repeat;
-  background-position: right -11rem bottom -4rem;
-  background-size: 25rem 25rem;
-  height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -795,9 +791,6 @@ textarea:placeholder-shown {
   border-radius: 10px;
 }
 
-.modal-container {
-}
-
 /* Contact form for desktop version */
 
 @media (min-width: 768px) {
@@ -1050,6 +1043,7 @@ textarea:placeholder-shown {
 .modal-buttons a:first-of-type img {
   width: 125px;
 }
+
 .modal-buttons a:last-of-type img {
   width: 140px;
 }
@@ -1061,13 +1055,13 @@ textarea:placeholder-shown {
 .show-on-desktop {
   display: none;
 }
+
 .display-pop-1,
 .display-pop-2 {
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   display: block;
   transition: all 0.2s ease-in-out;
   position: absolute;
-  z-index: 2;
   top: 140px;
   z-index: 100;
   background: #fff;
@@ -1077,16 +1071,6 @@ textarea:placeholder-shown {
 @media (min-width: 768px) {
   .modal-container {
     max-width: 1024px;
-  }
-  .cross-btn {
-    right: 30px;
-    top: 30px;
-  }
-  .modal-container h1 {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #172b4d;
   }
 
   .modal-container h1 {
@@ -1132,6 +1116,7 @@ textarea:placeholder-shown {
   .show-on-mobile {
     display: none;
   }
+
   .show-on-desktop {
     display: block;
   }
@@ -1142,6 +1127,7 @@ textarea:placeholder-shown {
     right: 0;
     width: 259%;
   }
+
   .display-pop-2 {
     width: 316%;
     top: 11px;

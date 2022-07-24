@@ -754,6 +754,13 @@ textarea:placeholder-shown {
   list-style-type: none;
 }
 
+.submit-btn {
+  position: absolute;
+  width: 150px;
+  height: 48px;
+  background: #f55800;
+}
+
 .footer {
   display: flex;
   flex-direction: column;

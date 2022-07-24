@@ -279,3 +279,17 @@ window.addEventListener('load', () => {
     });
   });
 });
+
+// form validation
+
+const form = document.querySelector('.contact-form');
+
+form.addEventListener('submit', function formValidation(event) {
+  const emailAddress = this.querySelector('#mail').value;
+  const errorMessage = this.querySelector('.error-message');
+  const condition = emailAddress.length > 0 ? emailAddress.toLowerCase() === emailAddress : false;
+  if (!condition) {
+    event.preventDefault();
+    errorMessage.textContent = 'Email address must not have upperCase characters!';
+  }
+});

@@ -293,3 +293,33 @@ form.addEventListener('submit', function formValidation(event) {
     errorMessage.textContent = 'Email address must not have upperCase characters!';
   }
 });
+
+// Preserving form data
+const getLocalStorageData = localStorage.getItem('formData');
+
+if (getLocalStorageData !== null) {
+  document.querySelector('input[type="text"]').value = JSON.parse(getLocalStorageData).name;
+  document.querySelector('input[type="email"]').value = JSON.parse(getLocalStorageData).email;
+  document.querySelector('textarea.inputs').value = JSON.parse(getLocalStorageData).message;
+}
+
+const obj = JSON.parse(getLocalStorageData);
+const contactFormObject = {
+  name: obj ? obj.name : '',
+  email: obj ? obj.email : '',
+  message: obj ? obj.message : '',
+};
+
+form.addEventListener('input', (e) => {
+  const targetElement = e.target;
+
+  if (targetElement.getAttribute('type') === 'text') {
+    contactFormObject.name = targetElement.value;
+  } else if (targetElement.getAttribute('type') === 'email') {
+    contactFormObject.email = targetElement.value;
+  } else {
+    contactFormObject.message = e.target.value;
+  }
+
+  localStorage.setItem('formData', JSON.stringify(contactFormObject));
+});
